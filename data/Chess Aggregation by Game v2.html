@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chess Outcome Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            chessWhite: '#0096FF',
+            chessBlack: '#FF4757',
+            chessDraw: '#E056FD',
+            darkBg: '#0F172A',
+            darkerBg: '#0A0F1F',
+            cardBg: '#1E293B',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .file-input {
+      opacity: 0;
+      width: 0.1px;
+      height: 0.1px;
+      position: absolute;
+    }
+    
+    .file-input-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      background-color: #1E293B;
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: 1px solid #334155;
+    }
+    
+    .file-input-label:hover {
+      background-color: #334155;
+    }
+    
+    .file-input-label i {
+      font-size: 1rem;
+    }
+    
+    .stat-card {
+      background-color: #1E293B;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      border: 1px solid #334155;
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 0.25rem;
+    }
+    
+    #chart-container {
+      transition: all 0.3s ease;
+    }
+    
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .tooltip .tooltip-text {
+      visibility: hidden;
+      width: 200px;
+      background-color: #1E293B;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -100px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      border: 1px solid #334155;
+      font-size: 0.875rem;
+    }
+    
+    .tooltip:hover .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-darkBg text-gray-100 min-h-screen">
+  <div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Header Section -->
+    <header class="text-center mb-8">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <i class="fas fa-chess text-3xl text-chessWhite"></i>
+        <h1 class="text-3xl font-bold bg-gradient-to-r from-chessWhite via-chessDraw to-chessBlack bg-clip-text text-transparent">
+          Chess Outcome Analyzer
+        </h1>
+      </div>
+      
+      <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
+        Upload your chess game data to visualize win percentages and performance trends over time.
+      </p>
+      
+      <div class="flex flex-col items-center mb-8">
+        <input type="file" id="csvFile" accept=".csv" class="file-input" />
+        <label for="csvFile" class="file-input-label">
+          <i class="fas fa-upload"></i>
+          <span>Upload Chess CSV</span>
+        </label>
+        <p class="text-sm text-gray-500 mt-2">Supported formats: .csv with game data</p>
+      </div>
+    </header>
+    
+    <!-- Top Stats: Total Games & Overall Win Rate -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-md mx-auto">
+      <div class="stat-card">
+        <div class="flex items-center justify-center gap-2 text-gray-400 mb-2">
+          <i class="fas fa-gamepad"></i>
+          <span># Total Games</span>
+        </div>
+        <div class="stat-value" id="totalGames">0 games total</div>
+      </div>
+      <div class="stat-card">
+        <div class="flex items-center justify-center gap-2 text-gray-400 mb-2">
+          <i class="fas fa-trophy"></i>
+          <span>Overall Win Rate</span>
+        </div>
+        <div class="stat-value text-white" id="overallWinRate">0%</div>
+        <div class="text-sm text-gray-500">Excluding draws</div>
+      </div>
+    </div>
+    
+    <!-- Stats Overview: White, Black, Draw -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-4xl mx-auto">
+      <div class="stat-card">
+        <div class="flex items-center gap-2 text-gray-400 justify-center">
+          <i class="fas fa-chess-king text-chessWhite"></i>
+          <span>White Wins</span>
+        </div>
+        <div class="stat-value text-chessWhite" id="whiteWinPct">0%</div>
+        <div class="text-sm text-gray-500" id="whiteGames">0 games</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="flex items-center gap-2 text-gray-400 justify-center">
+          <i class="fas fa-chess-king text-chessBlack"></i>
+          <span>Black Wins</span>
+        </div>
+        <div class="stat-value text-chessBlack" id="blackWinPct">0%</div>
+        <div class="text-sm text-gray-500" id="blackGames">0 games</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="flex items-center gap-2 text-gray-400 justify-center">
+          <i class="fas fa-handshake text-chessDraw"></i>
+          <span>Draws</span>
+        </div>
+        <div class="stat-value text-chessDraw" id="drawPct">0%</div>
+      </div>
+    </div>
+
+    <!-- Leader Indicators -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-4xl mx-auto">
+      <div class="stat-card">
+        <div class="flex items-center gap-2 text-gray-400">
+          <i class="fas fa-trophy"></i>
+          <span>Current Leader</span>
+        </div>
+        <div class="stat-value" id="leader">N/A</div>
+        <div class="text-sm text-gray-500">Based on raw win percentages</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="flex items-center gap-2 text-gray-600">
+          <i class="fas fa-balance-scale"></i>
+          <span>Edge Adjusted Leader</span>
+          <div class="tooltip">
+            <i class="fas fa-info-circle text-gray-600"></i>
+            <span class="tooltip-text">The Edge Adjusted Leader is factored in by 2.5% to equalize the number of games and normalize the win percentage.</span>
+          </div>
+        </div>
+        <div class="stat-value" id="edge-adjusted-leader">N/A</div>
+        <div class="text-sm text-gray-500">Normalized for game count</div>
+      </div>
+    </div>
+
+    <!-- Leader streak info -->
+    <div id="leader-streak" class="text-center font-semibold mb-8 text-lg"></div>
+    
+    <!-- Chart Section -->
+    <div class="bg-darkerBg rounded-xl p-4 border border-gray-1000 shadow-lg mb-8 max-w-6xl mx-auto">
+      <div id="chart-container" class="w-full h-[700px]">
+        <div id="chessChart" class="w-full h-full"></div>
+      </div>
+    </div>
+    
+    <!-- Info Section -->
+    <div class="text-center text-gray-500 text-sm max-w-3xl mx-auto">
+      <p class="mb-2">
+        <i class="fas fa-info-circle mr-1"></i> White and Black win percentages are based only on games played as that side. Draw percentages are based on all games.
+      </p>
+      <p>
+        <i class="fas fa-calculator mr-1"></i>The Edge Adjusted Leader is factored in by 2.5% to equalize the number of games and normalize the win percentage.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function parseCSV(text) {
+      const lines = text.trim().split('\n');
+      const headers = lines[0].split(',');
+      return lines.slice(1).map(line => {
+        const values = line.split(',');
+        const obj = {};
+        headers.forEach((h, i) => obj[h.trim()] = values[i] ? values[i].trim() : '');
+        return obj;
+      });
+    }
+
+    function updateHeader(whiteGames, blackGames, draws, totalGames, whiteWinPct, blackWinPct, drawPct, overallWinRate, leader, leaderPct, edgeLeader, edgeLeaderPct) {
+      document.getElementById('whiteWinPct').textContent = `${whiteWinPct.toFixed(1)}%`;
+      document.getElementById('blackWinPct').textContent = `${blackWinPct.toFixed(1)}%`;
+      document.getElementById('drawPct').textContent = `${drawPct.toFixed(1)}%`;
+      document.getElementById('overallWinRate').textContent = `${overallWinRate.toFixed(1)}%`;
+      
+      document.getElementById('whiteGames').textContent = `${whiteGames} games`;
+      document.getElementById('blackGames').textContent = `${blackGames} games`;
+      document.getElementById('totalGames').textContent = `${totalGames} games total`;
+
+      const leaderDiv = document.getElementById('leader');
+      if (leader === 'White') {
+        leaderDiv.style.color = '#0096FF';
+        leaderDiv.innerHTML = `White <span class="text-gray-400">(+${leaderPct.toFixed(2)}%)</span>`;
+      } else if (leader === 'Black') {
+        leaderDiv.style.color = '#FF4757';
+        leaderDiv.innerHTML = `Black <span class="text-gray-400">(+${leaderPct.toFixed(2)}%)</span>`;
+      } else if (leader === 'Draw') {
+        leaderDiv.style.color = '#E056FD';
+        leaderDiv.innerHTML = `Draw <span class="text-gray-400">(+${leaderPct.toFixed(2)}%)</span>`;
+      } else {
+        leaderDiv.style.color = 'white';
+        leaderDiv.textContent = 'N/A';
+      }
+
+      const edgeElem = document.getElementById('edge-adjusted-leader');
+      if (edgeLeader === 'White') {
+        edgeElem.style.color = '#0096FF';
+        edgeElem.innerHTML = `White <span class="text-gray-400">(+${edgeLeaderPct.toFixed(2)}%)</span>`;
+      } else if (edgeLeader === 'Black') {
+        edgeElem.style.color = '#FF4757';
+        edgeElem.innerHTML = `Black <span class="text-gray-400">(+${edgeLeaderPct.toFixed(2)}%)</span>`;
+      } else if (edgeLeader === 'Draw') {
+        edgeElem.style.color = '#E056FD';
+        edgeElem.innerHTML = `Draw <span class="text-gray-400">(+${edgeLeaderPct.toFixed(2)}%)</span>`;
+      } else {
+        edgeElem.style.color = 'white';
+        edgeElem.textContent = 'N/A';
+      }
+    }
+
+    function findLeaderStreak(whitePct, blackPct, drawPct) {
+      if (whitePct.length === 0) return null;
+
+      // Determine the leader at each point
+      let leaders = whitePct.map((w, i) => {
+        const b = blackPct[i];
+        const d = drawPct[i];
+        if (w > b && w > d) return 'White';
+        if (b > w && b > d) return 'Black';
+        if (d > w && d > b) return 'Draw';
+        return 'None';
+      });
+
+      // Find last streak start
+      let lastLeader = leaders[leaders.length - 1];
+      let streakStart = leaders.length - 1;
+      for (let i = leaders.length - 2; i >= 0; i--) {
+        if (leaders[i] !== lastLeader) break;
+        streakStart = i;
+      }
+
+      if (lastLeader === 'None') return null;
+
+      return {
+        leader: lastLeader,
+        startGame: streakStart + 1, // game numbers are 1-indexed
+        streakLength: leaders.length - streakStart
+      };
+    }
+
+    function processData(data) {
+      data = data.filter(d => d['Outcome'] && !['rule violation', 'future game'].includes(d['Outcome'].toLowerCase()));
+      if (data[0] && data[0]['Date']) {
+        data.sort((a, b) => new Date(a['Date']) - new Date(b['Date']));
+      }
+
+      let whiteWins = 0, blackWins = 0, draws = 0;
+      let whiteGames = 0, blackGames = 0;
+      let whitePct = [], blackPct = [], drawPct = [], margin = [];
+      let totalGames = 0;
+
+      data.forEach((d, i) => {
+        const side = d['Side'].toLowerCase();
+        const outcome = d['Outcome'];
+
+        if (side === 'white') whiteGames++;
+        if (side === 'black') blackGames++;
+        totalGames++;
+
+        if (outcome === 'Draw') draws++;
+        else if (outcome === 'Win') {
+          if (side === 'white') whiteWins++;
+          if (side === 'black') blackWins++;
+        }
+
+        const wPct = whiteGames > 0 ? (whiteWins / whiteGames) * 100 : 0;
+        const bPct = blackGames > 0 ? (blackWins / blackGames) * 100 : 0;
+        whitePct.push(wPct);
+        blackPct.push(bPct);
+        drawPct.push((draws / totalGames) * 100);
+        margin.push(wPct - bPct);
+      });
+
+      const whiteWinPctCurrent = whiteGames > 0 ? (whiteWins / whiteGames) * 100 : 0;
+      const blackWinPctCurrent = blackGames > 0 ? (blackWins / blackGames) * 100 : 0;
+      const drawPctCurrent = totalGames > 0 ? (draws / totalGames) * 100 : 0;
+
+      const totalWins = whiteWins + blackWins;
+      const totalPlayed = totalGames - draws;
+      const overallWinRate = totalPlayed > 0 ? (totalWins / totalPlayed) * 100 : 0;
+
+      let leader = 'None', leaderPct = 0;
+      if (whiteWinPctCurrent > blackWinPctCurrent && whiteWinPctCurrent > drawPctCurrent) {
+        leader = 'White';
+        leaderPct = whiteWinPctCurrent - Math.max(blackWinPctCurrent, drawPctCurrent);
+      } else if (blackWinPctCurrent > whiteWinPctCurrent && blackWinPctCurrent > drawPctCurrent) {
+        leader = 'Black';
+        leaderPct = blackWinPctCurrent - Math.max(whiteWinPctCurrent, drawPctCurrent);
+      } else if (drawPctCurrent > whiteWinPctCurrent && drawPctCurrent > blackWinPctCurrent) {
+        leader = 'Draw';
+        leaderPct = drawPctCurrent - Math.max(whiteWinPctCurrent, blackWinPctCurrent);
+      }
+
+      const adjustedW = whiteWinPctCurrent - 2.5;
+      let edgeLeader = 'None', edgeLeaderPct = 0;
+      if (adjustedW > blackWinPctCurrent && adjustedW > drawPctCurrent) {
+        edgeLeader = 'White';
+        edgeLeaderPct = adjustedW - Math.max(blackWinPctCurrent, drawPctCurrent);
+      } else if (blackWinPctCurrent > adjustedW && blackWinPctCurrent > drawPctCurrent) {
+        edgeLeader = 'Black';
+        edgeLeaderPct = blackWinPctCurrent - Math.max(adjustedW, drawPctCurrent);
+      } else if (drawPctCurrent > adjustedW && drawPctCurrent > blackWinPctCurrent) {
+        edgeLeader = 'Draw';
+        edgeLeaderPct = drawPctCurrent - Math.max(adjustedW, blackWinPctCurrent);
+      }
+
+      updateHeader(
+        whiteGames, blackGames, draws, totalGames,
+        whiteWinPctCurrent, blackWinPctCurrent, drawPctCurrent, overallWinRate,
+        leader, leaderPct, edgeLeader, edgeLeaderPct
+      );
+
+      // Update leader streak info
+      const streak = findLeaderStreak(whitePct, blackPct, drawPct);
+      const leaderStreakDiv = document.getElementById('leader-streak');
+      if (streak) {
+        leaderStreakDiv.textContent = `${streak.leader} has been leading since game #${streak.startGame} (${streak.streakLength} game${streak.streakLength > 1 ? 's' : ''} ago).`;
+        if (streak.leader === 'White') leaderStreakDiv.style.color = '#0096FF';
+        else if (streak.leader === 'Black') leaderStreakDiv.style.color = '#FF4757';
+        else if (streak.leader === 'Draw') leaderStreakDiv.style.color = '#E056FD';
+        else leaderStreakDiv.style.color = 'white';
+      } else {
+        leaderStreakDiv.textContent = '';
+      }
+
+      return {
+        totalGamesArr: data.map((_, i) => i + 1),
+        whitePct, blackPct, drawPct, margin
+      };
+    }
+
+    function renderChart(data) {
+      const xVals = data.totalGamesArr;
+      const xTicks = xVals.filter(x => x % 50 === 0);
+
+      const getCustomText = (label, yArray, marginArray) => {
+        return yArray.map((y, i) => {
+          const diff = marginArray[i];
+
+          let marginText = '';
+          if (diff > 0) {
+            marginText = `<span style="color:#0096FF">White +${diff.toFixed(1)}%</span>`;
+          } else if (diff < 0) {
+            marginText = `<span style="color:#FF4757">Black +${Math.abs(diff).toFixed(1)}%</span>`;
+          } else {
+            marginText = `<span style="color:#E056FD">Draw +0.0%</span>`;
+          }
+
+          return `${label}: ${y.toFixed(1)}%<br>${marginText}`;
+        });
+      };
+
+      const traces = [
+        {
+          x: xVals,
+          y: data.whitePct,
+          mode: 'lines+markers',
+          name: 'White Wins %',
+          line: { color: '#0096FF', width: 3 },
+          marker: { size: 6, color: '#0096FF' },
+          hovertemplate: '%{text}',
+          text: getCustomText("White Wins", data.whitePct, data.margin)
+        },
+        {
+          x: xVals,
+          y: data.blackPct,
+          mode: 'lines+markers',
+          name: 'Black Wins %',
+          line: { color: '#FF4757', width: 3 },
+          marker: { size: 6, color: '#FF4757' },
+          hovertemplate: '%{text}',
+          text: getCustomText("Black Wins", data.blackPct, data.margin)
+        },
+        {
+          x: xVals,
+          y: data.drawPct,
+          mode: 'lines+markers',
+          name: 'Draws %',
+          line: { color: '#E056FD', width: 3 },
+          marker: { size: 6, color: '#E056FD' },
+          hovertemplate: '%{text}',
+          text: getCustomText("Draws", data.drawPct, data.margin)
+        }
+      ];
+
+      const layout = {
+        title: {
+          text: 'Cumulative Chess Outcome Percentages',
+          font: {
+            color: '#E2E8F0',
+            size: 24
+          }
+        },
+        xaxis: {
+          title: {
+            text: 'Game Number',
+            font: {
+              color: '#94A3B8'
+            }
+          },
+          tickvals: xTicks,
+          tickangle: 45,
+          gridcolor: '#334155',
+          linecolor: '#334155',
+          tickfont: {
+            color: '#94A3B8'
+          }
+        },
+        yaxis: {
+          title: {
+            text: 'Cumulative Win %',
+            font: {
+              color: '#94A3B8'
+            }
+          },
+          range: [0, 70],
+          gridcolor: '#334155',
+          linecolor: '#334155',
+          tickfont: {
+            color: '#94A3B8'
+          }
+        },
+        plot_bgcolor: '#0F172A',
+        paper_bgcolor: '#0F172A',
+        font: { color: '#E2E8F0' },
+        legend: {
+          orientation: 'h',
+          x: 0,
+          y: -0.2,
+          font: {
+            color: '#E2E8F0'
+          }
+        },
+        hoverlabel: {
+          bgcolor: '#1E293B',
+          bordercolor: '#334155',
+          font: {
+            color: '#E2E8F0'
+          }
+        }
+      };
+
+      Plotly.newPlot('chessChart', traces, layout, { responsive: true });
+    }
+
+    document.getElementById('csvFile').addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        const text = event.target.result;
+        const data = parseCSV(text);
+        const processedData = processData(data);
+        renderChart(processedData);
+
+        // Update file input label
+        const label = document.querySelector('.file-input-label span');
+        label.textContent = file.name;
+        label.parentElement.classList.add('bg-green-900/20', 'border-green-500/50');
+      };
+      reader.readAsText(file);
+    });
+    // Load CSV from GitHub on page load
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('data/Chess_Database_6-27-2025_v2.csv')
+    .then(response => response.text())
+    .then(csvText => {
+      const data = parseCSV(csvText);
+      const processedData = processData(data);
+      renderChart(processedData);
+    })
+    .catch(err => console.error("Failed to load default CSV:", err));
+});
+  </script>
+</body>
+</html>
