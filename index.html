@@ -526,6 +526,17 @@
       };
       reader.readAsText(file);
     });
+    // Load CSV from GitHub on page load
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('data/Chess%20Database%206-27-2025%20v2.csv')
+    .then(response => response.text())
+    .then(csvText => {
+      const data = parseCSV(csvText);
+      const processedData = processData(data);
+      renderChart(processedData);
+    })
+    .catch(err => console.error("Failed to load default CSV:", err));
+});
   </script>
 </body>
 </html>
