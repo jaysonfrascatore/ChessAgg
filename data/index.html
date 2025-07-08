@@ -612,7 +612,7 @@
 
     // Load default CSV from GitHub on page load
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('data/Chess_Database_7-7-2025_v2.csv')
+  fetch('data/Chess_Database_7-7-2025.csv')
     .then(response => response.text())
     .then(csvText => {
       const data = parseCSV(csvText);
