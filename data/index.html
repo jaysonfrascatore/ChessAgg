@@ -108,7 +108,7 @@
       <div class="flex items-center justify-center gap-3 mb-4">
         <i class="fas fa-chess text-3xl text-chessWhite"></i>
         <h1 class="text-3xl font-bold bg-gradient-to-r from-chessWhite via-chessDraw to-chessBlack bg-clip-text text-transparent">
-          Chess Outcome Tracker
+          Chess Outcome Analyzer
         </h1>
       </div>
       
@@ -191,7 +191,7 @@
           <span>Edge Adjusted Leader</span>
           <div class="tooltip">
             <i class="fas fa-info-circle text-gray-600"></i>
-            <span class="tooltip-text">The Edge Adjusted Leader is factored in by 2.5% to equalize the number of games and normalize the win percentage.</span>
+            <span class="tooltip-text">The Edge Adjusted Leader compensates for imbalance in the side played. Up to a 2.5% boost may be applied to Black or White is overrepresented. See the methodology statement below.</span>
           </div>
         </div>
         <div class="stat-value" id="edge-adjusted-leader">N/A</div>
@@ -201,6 +201,10 @@
 
     <!-- Leader streak info -->
     <div id="leader-streak" class="text-center font-semibold mb-8 text-lg"></div>
+
+    <!-- Timestamp -->
+    <div id="last-updated" class="text-gray-400 text-sm mb-4 select-none"></div>
+
     
     <!-- Chart Section -->
     <div class="bg-darkerBg rounded-xl p-4 border border-gray-1000 shadow-lg mb-8 max-w-6xl mx-auto">
@@ -209,16 +213,40 @@
       </div>
     </div>
     
+    <!-- New Second Chart: Color Distribution -->
+    <div class="bg-darkerBg rounded-xl p-4 border border-gray-1000 shadow-lg mb-12 max-w-6xl mx-auto">
+      <div id="colorChart" class="w-full h-[600px]"></div>
+    </div>
+
     <!-- Info Section -->
     <div class="text-center text-gray-500 text-sm max-w-3xl mx-auto">
       <p class="mb-2">
         <i class="fas fa-info-circle mr-1"></i> White and Black win percentages are based only on games played as that side. Draw percentages are based on all games.
       </p>
       <p>
-        <i class="fas fa-calculator mr-1"></i>The Edge Adjusted Leader is factored in by 2.5% to equalize the number of games and normalize the win percentage.
+        <i class="fas fa-calculator mr-1"></i>The Edge Adjusted Leader compensates for imbalance in the side played. Up to a 2.5% boost may be applied to equalize the number of games and normalize the win percentage.
       </p>
     </div>
   </div>
+
+ <!-- Methodology Section -->
+<div class="bg-cardBg rounded-xl p-6 border border-gray-700 shadow-lg max-w-5xl mx-auto mb-12">
+  <h2 class="text-2xl font-bold mb-4 text-white flex items-center gap-2">
+    <i class="fas fa-flask text-chessDraw"></i> Methodology
+  </h2>
+  <p class="text-gray-300 mb-3">
+    The Chess Outcome Analyzer calculates cumulative win percentages over time for games played as White, Black, and Draws. Win percentages are based solely on games played from each side, while draws are counted across all games.
+  </p>
+  <p class="text-gray-300 mb-3">
+    When there is a significant imbalance in how often one side is played, a dynamic boost is applied to the side with less gamees to prevent skewed win percentage margins. For example, if 16 more games have been played as White, Black's win percentage lead will receive a small boost during edge-adjusted leader calculations to compensate for underrepresentation.
+  </p>
+  <p class="text-gray-300 mb-3">
+    This adjustment starts when the difference reaches 5 games or more. It scales based on how wide the imbalance is, from a minor 0.5% to a maximum of 2.5%. If the number of games played as White and Black is nearly even (less than 5 apart), no adjustment is applied. The boost applied to the side with less games, scales the imbalance in games played, starting at 0% for differences of 0 to 4 games, increasing to 0.5% for 5 to 7 games, 1.0% for 8 to 11 games, 1.75% for 12 to 15 games, and maxing out at 2.5% for a 16 or more game difference.
+  </p>
+  <p class="text-gray-500 italic">
+    Example: If 12 more games were played as Black, White receives a 1.75% adjustment when determining the edge-adjusted leader.
+  </p>
+</div>
 
   <script>
     function parseCSV(text) {
@@ -226,80 +254,52 @@
       const headers = lines[0].split(',');
       return lines.slice(1).map(line => {
         const values = line.split(',');
-        const obj = {};
-        headers.forEach((h, i) => obj[h.trim()] = values[i] ? values[i].trim() : '');
+        let obj = {};
+        headers.forEach((h, i) => {
+          obj[h.trim()] = values[i].trim();
+        });
         return obj;
       });
     }
 
     function updateHeader(whiteGames, blackGames, draws, totalGames, whiteWinPct, blackWinPct, drawPct, overallWinRate, leader, leaderPct, edgeLeader, edgeLeaderPct) {
-      document.getElementById('whiteWinPct').textContent = `${whiteWinPct.toFixed(1)}%`;
-      document.getElementById('blackWinPct').textContent = `${blackWinPct.toFixed(1)}%`;
-      document.getElementById('drawPct').textContent = `${drawPct.toFixed(1)}%`;
-      document.getElementById('overallWinRate').textContent = `${overallWinRate.toFixed(1)}%`;
-      
-      document.getElementById('whiteGames').textContent = `${whiteGames} games`;
-      document.getElementById('blackGames').textContent = `${blackGames} games`;
-      document.getElementById('totalGames').textContent = `${totalGames} games total`;
+      document.getElementById('whiteGames').textContent = `${whiteGames} game${whiteGames !== 1 ? 's' : ''}`;
+      document.getElementById('blackGames').textContent = `${blackGames} game${blackGames !== 1 ? 's' : ''}`;
+      document.getElementById('totalGames').textContent = `${totalGames} game${totalGames !== 1 ? 's' : ''} total`;
+      document.getElementById('whiteWinPct').textContent = whiteWinPct.toFixed(1) + '%';
+      document.getElementById('blackWinPct').textContent = blackWinPct.toFixed(1) + '%';
+      document.getElementById('drawPct').textContent = drawPct.toFixed(1) + '%';
+      document.getElementById('overallWinRate').textContent = overallWinRate.toFixed(1) + '%';
 
-      const leaderDiv = document.getElementById('leader');
-      if (leader === 'White') {
-        leaderDiv.style.color = '#0096FF';
-        leaderDiv.innerHTML = `White <span class="text-gray-400">(+${leaderPct.toFixed(2)}%)</span>`;
-      } else if (leader === 'Black') {
-        leaderDiv.style.color = '#FF4757';
-        leaderDiv.innerHTML = `Black <span class="text-gray-400">(+${leaderPct.toFixed(2)}%)</span>`;
-      } else if (leader === 'Draw') {
-        leaderDiv.style.color = '#E056FD';
-        leaderDiv.innerHTML = `Draw <span class="text-gray-400">(+${leaderPct.toFixed(2)}%)</span>`;
-      } else {
-        leaderDiv.style.color = 'white';
-        leaderDiv.textContent = 'N/A';
-      }
-
-      const edgeElem = document.getElementById('edge-adjusted-leader');
-      if (edgeLeader === 'White') {
-        edgeElem.style.color = '#0096FF';
-        edgeElem.innerHTML = `White <span class="text-gray-400">(+${edgeLeaderPct.toFixed(2)}%)</span>`;
-      } else if (edgeLeader === 'Black') {
-        edgeElem.style.color = '#FF4757';
-        edgeElem.innerHTML = `Black <span class="text-gray-400">(+${edgeLeaderPct.toFixed(2)}%)</span>`;
-      } else if (edgeLeader === 'Draw') {
-        edgeElem.style.color = '#E056FD';
-        edgeElem.innerHTML = `Draw <span class="text-gray-400">(+${edgeLeaderPct.toFixed(2)}%)</span>`;
-      } else {
-        edgeElem.style.color = 'white';
-        edgeElem.textContent = 'N/A';
-      }
+      document.getElementById('leader').textContent = leader === 'None' ? 'None' : `${leader} (+${leaderPct.toFixed(1)}%)`;
+      document.getElementById('edge-adjusted-leader').textContent = edgeLeader === 'None' ? 'None' : `${edgeLeader} (+${edgeLeaderPct.toFixed(1)}%)`;
     }
 
     function findLeaderStreak(whitePct, blackPct, drawPct) {
-      if (whitePct.length === 0) return null;
+      let currentLeader = null;
+      let streakStart = 0;
 
-      // Determine the leader at each point
-      let leaders = whitePct.map((w, i) => {
-        const b = blackPct[i];
-        const d = drawPct[i];
-        if (w > b && w > d) return 'White';
-        if (b > w && b > d) return 'Black';
-        if (d > w && d > b) return 'Draw';
+      function getLeader(i) {
+        if (whitePct[i] > blackPct[i] && whitePct[i] > drawPct[i]) return 'White';
+        if (blackPct[i] > whitePct[i] && blackPct[i] > drawPct[i]) return 'Black';
+        if (drawPct[i] > whitePct[i] && drawPct[i] > blackPct[i]) return 'Draw';
         return 'None';
-      });
-
-      // Find last streak start
-      let lastLeader = leaders[leaders.length - 1];
-      let streakStart = leaders.length - 1;
-      for (let i = leaders.length - 2; i >= 0; i--) {
-        if (leaders[i] !== lastLeader) break;
-        streakStart = i;
       }
 
-      if (lastLeader === 'None') return null;
+      for (let i = 0; i < whitePct.length; i++) {
+        let leader = getLeader(i);
+        if (leader !== currentLeader) {
+          currentLeader = leader;
+          streakStart = i;
+        }
+      }
+
+      if (currentLeader === 'None') return null;
 
       return {
-        leader: lastLeader,
-        startGame: streakStart + 1, // game numbers are 1-indexed
-        streakLength: leaders.length - streakStart
+        leader: currentLeader,
+        startGame: streakStart + 1,
+        streakLength: whitePct.length - streakStart
       };
     }
 
@@ -314,12 +314,22 @@
       let whitePct = [], blackPct = [], drawPct = [], margin = [];
       let totalGames = 0;
 
+      // Track cumulative White and Black counts
+      let whiteCount = 0, blackCount = 0;
+      let whiteCountArr = [], blackCountArr = [];
+
       data.forEach((d, i) => {
         const side = d['Side'].toLowerCase();
         const outcome = d['Outcome'];
 
-        if (side === 'white') whiteGames++;
-        if (side === 'black') blackGames++;
+        if (side === 'white') {
+          whiteGames++;
+          whiteCount++;
+        }
+        if (side === 'black') {
+          blackGames++;
+          blackCount++;
+        }
         totalGames++;
 
         if (outcome === 'Draw') draws++;
@@ -334,6 +344,10 @@
         blackPct.push(bPct);
         drawPct.push((draws / totalGames) * 100);
         margin.push(wPct - bPct);
+
+        // Append cumulative counts per game:
+        whiteCountArr.push(whiteCount);
+        blackCountArr.push(blackCount);
       });
 
       const whiteWinPctCurrent = whiteGames > 0 ? (whiteWins / whiteGames) * 100 : 0;
@@ -356,18 +370,36 @@
         leaderPct = drawPctCurrent - Math.max(whiteWinPctCurrent, blackWinPctCurrent);
       }
 
-      const adjustedW = whiteWinPctCurrent - 2.5;
-      let edgeLeader = 'None', edgeLeaderPct = 0;
-      if (adjustedW > blackWinPctCurrent && adjustedW > drawPctCurrent) {
-        edgeLeader = 'White';
-        edgeLeaderPct = adjustedW - Math.max(blackWinPctCurrent, drawPctCurrent);
-      } else if (blackWinPctCurrent > adjustedW && blackWinPctCurrent > drawPctCurrent) {
-        edgeLeader = 'Black';
-        edgeLeaderPct = blackWinPctCurrent - Math.max(adjustedW, drawPctCurrent);
-      } else if (drawPctCurrent > adjustedW && drawPctCurrent > blackWinPctCurrent) {
-        edgeLeader = 'Draw';
-        edgeLeaderPct = drawPctCurrent - Math.max(adjustedW, blackWinPctCurrent);
+      // Dynamic Black Boost Logic
+      let imbalance = whiteGames - blackGames;
+      let blackBoost = 0;
+
+      if (imbalance >= 5 && imbalance <= 7) {
+        blackBoost = 0.5;
+      } else if (imbalance >= 8 && imbalance <= 11) {
+        blackBoost = 1.0;
+      } else if (imbalance >= 12 && imbalance <= 15) {
+        blackBoost = 1.75;
+      } else if (imbalance >= 16) {
+        blackBoost = 2.5;
       }
+
+      // Apply the dynamic boost to Black
+      const adjustedW = whiteWinPctCurrent;
+      const adjustedB = blackWinPctCurrent + blackBoost;
+
+            let edgeLeader = 'None', edgeLeaderPct = 0;
+      if (adjustedW > adjustedB && adjustedW > drawPctCurrent) {
+        edgeLeader = 'White';
+        edgeLeaderPct = adjustedW - Math.max(adjustedB, drawPctCurrent);
+      } else if (adjustedB > adjustedW && adjustedB > drawPctCurrent) {
+        edgeLeader = 'Black';
+        edgeLeaderPct = adjustedB - Math.max(adjustedW, drawPctCurrent);
+      } else if (drawPctCurrent > adjustedW && drawPctCurrent > adjustedB) {
+        edgeLeader = 'Draw';
+        edgeLeaderPct = drawPctCurrent - Math.max(adjustedW, adjustedB);
+}
+
 
       updateHeader(
         whiteGames, blackGames, draws, totalGames,
@@ -390,7 +422,8 @@
 
       return {
         totalGamesArr: data.map((_, i) => i + 1),
-        whitePct, blackPct, drawPct, margin
+        whitePct, blackPct, drawPct, margin,
+        whiteCountArr, blackCountArr
       };
     }
 
@@ -508,6 +541,75 @@
       Plotly.newPlot('chessChart', traces, layout, { responsive: true });
     }
 
+    // NEW FUNCTION: Render White vs Black cumulative count chart
+    function renderColorCountChart(data) {
+      const xVals = data.totalGamesArr;
+      const whiteCounts = data.whiteCountArr;
+      const blackCounts = data.blackCountArr;
+
+      // Prepare hover text showing leader and difference with %
+      const leaderText = whiteCounts.map((w, i) => {
+        const b = blackCounts[i];
+        const diff = w - b;
+        const total = w + b;
+        const pct = total > 0 ? Math.abs(diff) / total * 100 : 0;
+        const leader = diff > 0 ? "White" : diff < 0 ? "Black" : "Even";
+        return leader === "Even" ? `Even` : `${leader}+${Math.abs(diff)} [${pct.toFixed(1)}%]`;
+      });
+
+      const traceWhite = {
+        x: xVals,
+        y: whiteCounts,
+        mode: 'lines+markers',
+        name: 'White Played',
+        line: { color: '#D2B48C', width: 3 },
+        marker: { size: 6 },
+        hovertemplate: '%{text}',
+        text: leaderText
+      };
+
+      const traceBlack = {
+        x: xVals,
+        y: blackCounts,
+        mode: 'lines+markers',
+        name: 'Black Played',
+        line: { color: '#808080', width: 3 },
+        marker: { size: 6 },
+        hovertemplate: '%{text}',
+        text: leaderText
+      };
+
+      const layout = {
+        title: {
+          text: 'Side Played Over Time',
+          font: { color: '#E2E8F0', size: 22 }
+        },
+        xaxis: {
+          title: { text: 'Game Number', font: { color: '#94A3B8' } },
+          gridcolor: '#334155',
+          linecolor: '#334155',
+          tickfont: { color: '#94A3B8' }
+        },
+        yaxis: {
+          title: { text: 'Cumulative Games Played', font: { color: '#94A3B8' } },
+          gridcolor: '#334155',
+          linecolor: '#334155',
+          tickfont: { color: '#94A3B8' }
+        },
+        plot_bgcolor: '#0F172A',
+        paper_bgcolor: '#0F172A',
+        font: { color: '#E2E8F0' },
+        legend: { orientation: 'h', x: 0, y: -0.2 },
+        hoverlabel: {
+          bgcolor: '#1E293B',
+          bordercolor: '#334155',
+          font: { color: '#E2E8F0' }
+        }
+      };
+
+      Plotly.newPlot('colorChart', [traceWhite, traceBlack], layout, { responsive: true });
+    }
+
     document.getElementById('csvFile').addEventListener('change', function (e) {
       const file = e.target.files[0];
       if (!file) return;
@@ -519,24 +621,29 @@
         const processedData = processData(data);
         renderChart(processedData);
 
+        // Render the White/Black count chart
+        renderColorCountChart(processedData);
+
         // Update file input label
         const label = document.querySelector('.file-input-label span');
         label.textContent = file.name;
         label.parentElement.classList.add('bg-green-900/20', 'border-green-500/50');
+
+        // Update timestamp
+        document.getElementById('last-updated').textContent = formatDateTime(new Date());
       };
+
       reader.readAsText(file);
     });
-    // Load CSV from GitHub on page load
-window.addEventListener('DOMContentLoaded', () => {
-  fetch('data/Chess_Database_6-27-2025_v2.csv')
-    .then(response => response.text())
-    .then(csvText => {
-      const data = parseCSV(csvText);
-      const processedData = processData(data);
-      renderChart(processedData);
-    })
-    .catch(err => console.error("Failed to load default CSV:", err));
-});
+
+    // Timestamp formatting
+    function formatDateTime(date) {
+      const options = { month: 'long', day: 'numeric', year: 'numeric' };
+      const timeOptions = { hour: 'numeric', minute: '2-digit', hour12: true };
+      const datePart = date.toLocaleDateString('en-US', options);
+      const timePart = date.toLocaleTimeString('en-US', timeOptions).toUpperCase();
+      return `Last Updated: ${datePart} at ${timePart}`;
+    }
   </script>
 </body>
 </html>
