@@ -108,12 +108,12 @@
       <div class="flex items-center justify-center gap-3 mb-4">
         <i class="fas fa-chess text-3xl text-chessWhite"></i>
         <h1 class="text-3xl font-bold bg-gradient-to-r from-chessWhite via-chessDraw to-chessBlack bg-clip-text text-transparent">
-          Chess Outcome Analyzer
+          Chess Outcome Tracker
         </h1>
       </div>
       
       <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
-        Upload your chess game data to visualize win percentages and performance trends over time.
+        The Chess Outcome Tracker is a comprehensive dashboard tracking chess win percentages for White, Black, and Draws. It visualizes performance trends, highlights areas of improvement by side, and uncovers patterns in game outcomes over time. It is designed to provide clear, data-driven insights that support a deeper understanding of playing strengths and weaknesses.
       </p>
       
       <div class="flex flex-col items-center mb-8">
@@ -235,7 +235,7 @@
     <i class="fas fa-flask text-chessDraw"></i> Methodology
   </h2>
   <p class="text-gray-300 mb-3">
-    The Chess Outcome Analyzer calculates cumulative win percentages over time for games played as White, Black, and Draws. Win percentages are based solely on games played from each side, while draws are counted across all games.
+    The Chess Outcome Tracker calculates cumulative win percentages over time for games played as White, Black, and Draws. Win percentages are based solely on games played from each side, while draws are counted across all games.
   </p>
   <p class="text-gray-300 mb-3">
     When there is a significant imbalance in how often one side is played, a dynamic boost is applied to the side with less gamees to prevent skewed win percentage margins. For example, if 16 more games have been played as White, Black's win percentage lead will receive a small boost during edge-adjusted leader calculations to compensate for underrepresentation.
@@ -612,18 +612,13 @@
 
     // Load default CSV from GitHub on page load
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('data/Chess_Database_7-7-2025_v2.csv')
+  fetch('data/Chess_Database_7-7-2025.csv')
     .then(response => response.text())
     .then(csvText => {
       const data = parseCSV(csvText);
       const processedData = processData(data);
       renderChart(processedData);
       renderColorCountChart(processedData);
-
-      // Optional: set the label to reflect the default loaded file
-      const label = document.querySelector('.file-input-label span');
-      label.textContent = 'Chess_Database_7-7-2025.csv';
-      label.parentElement.classList.add('bg-green-900/20', 'border-green-500/50');
 
       // Update timestamp
       document.getElementById('last-updated').textContent = formatDateTime(new Date());
@@ -656,8 +651,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
       reader.readAsText(file);
     });
-
-
 
     // Timestamp formatting
     function formatDateTime(date) {
