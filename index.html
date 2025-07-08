@@ -238,7 +238,7 @@
     The Chess Outcome Tracker calculates cumulative win percentages over time for games played as White, Black, and Draws. Win percentages are based solely on games played from each side, while draws are counted across all games.
   </p>
   <p class="text-gray-300 mb-3">
-    When there is a significant imbalance in how often one side is played, a dynamic boost is applied to the side with less gamees to prevent skewed win percentage margins. For example, if 16 more games have been played as White, Black's win percentage lead will receive a small boost during edge-adjusted leader calculations to compensate for underrepresentation.
+    When there is a significant imbalance in how often one side is played, a dynamic boost is applied to the side with less games to prevent skewed win percentage margins. For example, if 16 more games have been played as White, Black's win percentage lead will receive a small boost during edge-adjusted leader calculations to compensate for underrepresentation.
   </p>
   <p class="text-gray-300 mb-3">
     This adjustment starts when the difference reaches 5 games or more. It scales based on how wide the imbalance is, from a minor 0.5% to a maximum of 2.5%. If the number of games played as White and Black is nearly even (less than 5 apart), no adjustment is applied. The boost applied to the side with less games, scales the imbalance in games played, starting at 0% for differences of 0 to 4 games, increasing to 0.5% for 5 to 7 games, 1.0% for 8 to 11 games, 1.75% for 12 to 15 games, and maxing out at 2.5% for a 16 or more game difference.
