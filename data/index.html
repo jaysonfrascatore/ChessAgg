@@ -612,18 +612,13 @@
 
     // Load default CSV from GitHub on page load
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('data/Chess_Database_7-7-2025.csv')
+  fetch('data/Chess_Database_7-7-2025_v2.csv')
     .then(response => response.text())
     .then(csvText => {
       const data = parseCSV(csvText);
       const processedData = processData(data);
       renderChart(processedData);
       renderColorCountChart(processedData);
-
-      // Optional: set the label to reflect the default loaded file
-      const label = document.querySelector('.file-input-label span');
-      label.textContent = 'Chess_Database_7-7-2025.csv';
-      label.parentElement.classList.add('bg-green-900/20', 'border-green-500/50');
 
       // Update timestamp
       document.getElementById('last-updated').textContent = formatDateTime(new Date());
@@ -657,8 +652,6 @@ window.addEventListener('DOMContentLoaded', () => {
       reader.readAsText(file);
     });
 
-
-
     // Timestamp formatting
     function formatDateTime(date) {
       const options = { month: 'long', day: 'numeric', year: 'numeric' };
@@ -670,3 +663,4 @@ window.addEventListener('DOMContentLoaded', () => {
   </script>
 </body>
 </html>
+
