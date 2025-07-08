@@ -610,6 +610,27 @@
       Plotly.newPlot('colorChart', [traceWhite, traceBlack], layout, { responsive: true });
     }
 
+    // Load default CSV from GitHub on page load
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('data/Chess_Database_7-7-2025_v2.csv')
+    .then(response => response.text())
+    .then(csvText => {
+      const data = parseCSV(csvText);
+      const processedData = processData(data);
+      renderChart(processedData);
+      renderColorCountChart(processedData);
+
+      // Optional: set the label to reflect the default loaded file
+      const label = document.querySelector('.file-input-label span');
+      label.textContent = 'Chess_Database_7-7-2025_v2.csv';
+      label.parentElement.classList.add('bg-green-900/20', 'border-green-500/50');
+
+      // Update timestamp
+      document.getElementById('last-updated').textContent = formatDateTime(new Date());
+    })
+    .catch(err => console.error("Failed to load default CSV:", err));
+});
+
     document.getElementById('csvFile').addEventListener('change', function (e) {
       const file = e.target.files[0];
       if (!file) return;
@@ -635,6 +656,8 @@
 
       reader.readAsText(file);
     });
+
+
 
     // Timestamp formatting
     function formatDateTime(date) {
