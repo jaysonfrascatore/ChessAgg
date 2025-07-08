@@ -1,0 +1,1001 @@
+Date,Time,Game ID,Elo,Outcome,Side,Country
+1/1/2025,11:59:59 PM,1,196,Loss,Black,USA
+1/1/2025,11:59:59 PM,2,196,Draw,White,USA
+1/1/2025,11:59:59 PM,3,205,Win,White,Indonesia
+1/1/2025,11:59:59 PM,4,205,Draw,Black,Peru
+1/1/2025,11:59:59 PM,5,213,Win,White,New Zealand
+1/1/2025,11:59:59 PM,6,205,Loss,Black,USA
+1/1/2025,11:59:59 PM,7,205,Draw,White,Germany
+1/1/2025,11:59:59 PM,8,197,Loss,Black,USA
+1/2/2025,11:59:59 PM,9,189,Loss,White,USA
+1/2/2025,11:59:59 PM,10,189,Draw,Black,Iraq
+1/2/2025,11:59:59 PM,11,181,Loss,Black,USA
+1/2/2025,11:59:59 PM,12,189,Win,White,India
+1/2/2025,11:59:59 PM,13,197,Win,Black,USA
+1/2/2025,11:59:59 PM,14,205,Win,White,USA
+1/2/2025,11:59:59 PM,15,205,Draw,White,France
+1/2/2025,11:59:59 PM,16,197,Loss,White,Spain
+1/2/2025,11:59:59 PM,17,189,Loss,White,USA
+1/2/2025,11:59:59 PM,18,197,Win,Black,Poland
+1/2/2025,11:59:59 PM,19,189,Loss,Black,India
+1/2/2025,11:59:59 PM,20,181,Loss,White,India
+1/2/2025,11:59:59 PM,21,189,Win,White,USA
+1/2/2025,11:59:59 PM,22,188,Draw,Black,Indonesia
+1/3/2025,11:59:59 PM,23,188,Draw,White,USA
+1/3/2025,11:59:59 PM,24,188,Draw,Black,United Kingdom
+1/3/2025,11:59:59 PM,25,196,Win,White,Isle of Man
+1/3/2025,11:59:59 PM,26,188,Loss,White,India
+1/3/2025,11:59:59 PM,27,179,Loss,Black,Brazil
+1/3/2025,11:59:59 PM,28,179,Draw,Black,Pakistan
+1/3/2025,11:59:59 PM,29,178,Draw,White,India
+1/3/2025,11:59:59 PM,30,186,Win,Black,India
+1/3/2025,11:59:59 PM,31,194,Win,White,Brazil
+1/4/2025,11:59:59 PM,32,194,Draw,Black,France
+1/4/2025,11:59:59 PM,33,194,Draw,White,Canada
+1/4/2025,11:59:59 PM,34,186,Loss,Black,Kazakhstan
+1/4/2025,11:59:59 PM,35,179,Loss,White,India
+1/4/2025,11:59:59 PM,36,178,Draw,Black,USA
+1/4/2025,11:59:59 PM,37,185,Win,White,USA
+1/5/2025,11:59:59 PM,38,178,Loss,Black,Greenland
+1/5/2025,11:59:59 PM,39,170,Loss,White,India
+1/5/2025,11:59:59 PM,40,178,Win,Black,Indonesia
+1/5/2025,11:59:59 PM,41,186,Win,White,USA
+1/5/2025,11:59:59 PM,42,194,Win,White,India
+1/5/2025,11:59:59 PM,43,186,Loss,Black,Vietnam
+1/5/2025,11:59:59 PM,44,194,Win,White,USA
+1/5/2025,11:59:59 PM,45,202,Win,Black,USA
+1/6/2025,11:59:59 PM,46,210,Win,Black,Ecuador
+1/7/2025,11:59:59 PM,47,217,Win,White,British Virgin Islands
+1/7/2025,11:59:59 PM,48,225,Win,Black,USA
+1/7/2025,11:59:59 PM,49,217,Loss,White,India
+1/7/2025,11:59:59 PM,50,209,Loss,White,USA
+1/7/2025,11:59:59 PM,51,217,Win,Black,Belgium
+1/7/2025,11:59:59 PM,52,217,Draw,White,India
+1/8/2025,11:59:59 PM,53,225,Win,Black,India
+1/8/2025,11:59:59 PM,54,232,Win,White,Mexico
+1/8/2025,11:59:59 PM,55,224,Loss,Black,Rwanda
+1/9/2025,11:59:59 PM,56,216,Loss,White,Romania
+1/9/2025,11:59:59 PM,57,208,Loss,Black,India
+1/9/2025,11:59:59 PM,58,208,Draw,White,Brazil
+1/9/2025,11:59:59 PM,59,200,Loss,White,Saudi Arabia
+1/9/2025,11:59:59 PM,60,200,Draw,Black,South Africa
+1/9/2025,11:59:59 PM,61,192,Loss,White,Spain
+1/9/2025,11:59:59 PM,62,200,Win,White,Brazil
+1/9/2025,11:59:59 PM,63,208,Win,Black,United Kingdom
+1/9/2025,11:59:59 PM,64,200,Loss,Black,Canada
+1/9/2025,11:59:59 PM,65,208,Win,White,Netherlands
+1/9/2025,11:59:59 PM,66,200,Loss,Black,Canada
+1/9/2025,11:59:59 PM,67,200,Draw,White,United Kingdom
+1/9/2025,11:59:59 PM,68,208,Win,White,Canada
+1/9/2025,11:59:59 PM,69,200,Loss,Black,Philippines
+1/10/2025,11:59:59 PM,70,193,Loss,Black,USA
+1/10/2025,11:59:59 PM,71,201,Win,White,USA
+1/11/2025,11:59:59 PM,72,201,Draw,White,USA
+1/11/2025,11:59:59 PM,73,194,Loss,Black,Georgia
+1/11/2025,11:59:59 PM,74,202,Win,White,International
+1/11/2025,11:59:59 PM,75,210,Win,Black,Mexico
+1/11/2025,11:59:59 PM,76,218,Win,Black,India
+1/12/2025,11:59:59 PM,77,226,Win,White,USA
+1/12/2025,11:59:59 PM,78,218,Loss,Black,France
+1/12/2025,11:59:59 PM,79,226,Win,White,Brazil
+1/12/2025,11:59:59 PM,80,226,Draw,Black,India
+1/13/2025,11:59:59 PM,81,218,Loss,White,Mexico
+1/13/2025,11:59:59 PM,82,218,Draw,Black,USA
+1/13/2025,11:59:59 PM,83,210,Loss,White,Japan
+1/13/2025,11:59:59 PM,84,218,Win,Black,Vietnam
+1/13/2025,11:59:59 PM,85,210,Loss,White,USA
+1/13/2025,11:59:59 PM,86,218,Win,Black,India
+1/13/2025,11:59:59 PM,87,226,Win,Black,India
+1/14/2025,11:59:59 PM,88,217,Loss,Black,New Zealand
+1/14/2025,11:59:59 PM,89,225,Win,White,India
+1/14/2025,11:59:59 PM,90,217,Loss,White,India
+1/14/2025,11:59:59 PM,91,225,Win,Black,Philippines
+1/15/2025,11:59:59 PM,92,233,Win,Black,India
+1/15/2025,11:59:59 PM,93,224,Loss,White,India
+1/15/2025,11:59:59 PM,94,232,Win,White,Canada
+1/15/2025,11:59:59 PM,95,240,Win,Black,Brazil
+1/16/2025,11:59:59 PM,96,248,Win,White,USA
+1/17/2025,11:59:59 PM,97,248,Draw,White,France
+1/17/2025,11:59:59 PM,98,240,Loss,Black,USA
+1/17/2025,11:59:59 PM,99,248,Win,Black,Mayanmar
+1/17/2025,11:59:59 PM,100,256,Win,White,India
+1/17/2025,11:59:59 PM,101,248,Loss,White,USA
+1/18/2025,11:59:59 PM,102,240,Loss,Black,Canada
+1/18/2025,11:59:59 PM,103,232,Loss,Black,India
+1/18/2025,11:59:59 PM,104,240,Win,Black,Philippines
+1/18/2025,11:59:59 PM,105,248,Win,White,Hungary
+1/18/2025,11:59:59 PM,106,240,Loss,Black,Brazil
+1/18/2025,11:59:59 PM,107,232,Loss,White,Italy
+1/18/2025,11:59:59 PM,108,231,Draw,White,Poland
+1/18/2025,11:59:59 PM,109,239,Win,Black,Italy
+1/19/2025,11:59:59 PM,110,232,Loss,White,Estonia
+1/19/2025,11:59:59 PM,111,240,Win,Black,India
+1/19/2025,11:59:59 PM,112,232,Loss,Black,Thailand
+1/19/2025,11:59:59 PM,113,240,Win,White,India
+1/19/2025,11:59:59 PM,114,231,Loss,White,USA
+1/19/2025,11:59:59 PM,115,239,Win,Black,USA
+1/19/2025,11:59:59 PM,116,231,Loss,White,Malaysia
+1/19/2025,11:59:59 PM,117,223,Loss,Black,Canada
+1/19/2025,11:59:59 PM,118,232,Win,Black,Australia
+1/20/2025,11:59:59 PM,119,224,Loss,White,Turkiye
+1/20/2025,11:59:59 PM,120,232,Win,Black,India
+1/22/2025,11:59:59 PM,121,232,Draw,Black,India
+1/24/2025,11:59:59 PM,122,232,Draw,White,Australia
+1/24/2025,11:59:59 PM,123,224,Loss,White,Thailand
+1/24/2025,11:59:59 PM,124,232,Win,White,Mexico
+1/24/2025,11:59:59 PM,125,224,Loss,White,Saudi Arabia
+1/24/2025,11:59:59 PM,126,216,Loss,Black,Canada
+1/24/2025,11:59:59 PM,127,224,Win,White,Brazil
+1/25/2025,11:59:59 PM,128,225,Draw,White,Mexico
+1/25/2025,11:59:59 PM,129,233,Win,Black,Egypt
+1/25/2025,11:59:59 PM,130,234,Draw,White,USA
+1/25/2025,11:59:59 PM,131,242,Win,Black,USA
+1/27/2025,11:59:59 PM,132,250,Win,Black,France
+1/27/2025,11:59:59 PM,133,242,Loss,White,India
+1/27/2025,11:59:59 PM,134,234,Loss,Black,Chile
+1/27/2025,11:59:59 PM,135,226,Loss,Black,USA
+1/28/2025,11:59:59 PM,136,234,Win,White,India
+1/29/2025,11:59:59 PM,137,226,Loss,Black,USA
+1/29/2025,11:59:59 PM,138,218,Loss,Black,Argentina
+1/30/2025,11:59:59 PM,139,226,Win,White,Egypt
+1/31/2025,11:59:59 PM,140,233,Win,Black,Indonesia
+1/31/2025,11:59:59 PM,141,225,Loss,White,France
+1/31/2025,11:59:59 PM,142,225,Draw,Black,Iran
+2/1/2025,11:59:59 PM,143,233,Win,White,Myanmar
+2/1/2025,11:59:59 PM,144,241,Win,White,Philippines
+2/2/2025,11:59:59 PM,145,241,Draw,White,USA
+2/2/2025,11:59:59 PM,146,249,Win,Black,USA
+2/3/2025,11:59:59 PM,147,257,Win,White,Gabon
+2/4/2025,11:59:59 PM,148,249,Loss,Black,India
+2/4/2025,11:59:59 PM,149,257,Win,White,USA
+2/4/2025,11:59:59 PM,150,265,Win,Black,India
+2/5/2025,11:59:59 PM,151,273,Win,Black,USA
+2/6/2025,11:59:59 PM,152,266,Loss,White,India
+2/6/2025,11:59:59 PM,153,265,Draw,White,USA
+2/6/2025,11:59:59 PM,154,257,Loss,Black,Australia
+2/6/2025,11:59:59 PM,155,265,Win,White,India
+2/6/2025,11:59:59 PM,156,265,Draw,White,USA
+2/6/2025,11:59:59 PM,157,273,Win,Black,USA
+2/7/2025,11:59:59 PM,158,265,Loss,Black,Philippines
+2/7/2025,11:59:59 PM,159,273,Win,White,India
+2/8/2025,11:59:59 PM,160,265,Loss,Black,Australia
+2/8/2025,11:59:59 PM,161,273,Win,White,Nepal
+2/8/2025,11:59:59 PM,162,281,Win,White,USA
+2/8/2025,11:59:59 PM,163,273,Loss,Black,South Korea
+2/8/2025,11:59:59 PM,164,281,Win,White,India
+2/9/2025,11:59:59 PM,165,289,Rule Violation,None,None
+2/9/2025,11:59:59 PM,166,297,Win,Black,India
+2/9/2025,11:59:59 PM,167,305,Win,White,Indonesia
+2/10/2025,11:59:59 PM,168,297,Loss,Black,Thailand
+2/10/2025,11:59:59 PM,169,305,Win,White,Brazil
+2/10/2025,11:59:59 PM,170,313,Win,White,India
+2/10/2025,11:59:59 PM,171,321,Win,Black,Russia
+2/10/2025,11:59:59 PM,172,329,Win,White,USA
+2/11/2025,11:59:59 PM,173,337,Win,White,USA
+2/11/2025,11:59:59 PM,174,337,Draw,Black,Peru
+2/12/2025,11:59:59 PM,175,329,Loss,Black,India
+2/12/2025,11:59:59 PM,176,321,Loss,White,Argentina
+2/12/2025,11:59:59 PM,177,321,Draw,White,India
+2/12/2025,11:59:59 PM,178,313,Loss,Black,Indonesia
+2/13/2025,11:59:59 PM,179,313,Draw,White,Denmark
+2/14/2025,11:59:59 PM,180,321,Win,Black,USA
+2/14/2025,11:59:59 PM,181,313,Loss,Black,India
+2/14/2025,11:59:59 PM,182,306,Loss,White,India
+2/14/2025,11:59:59 PM,183,298,Loss,Black,USA
+2/15/2025,11:59:59 PM,184,306,Win,White,Canada
+2/15/2025,11:59:59 PM,185,315,Win,White,USA
+2/16/2025,11:59:59 PM,186,307,Loss,Black,India
+2/16/2025,11:59:59 PM,187,315,Win,White,Pakistan
+2/17/2025,11:59:59 PM,188,307,Loss,White,India
+2/18/2025,11:59:59 PM,189,299,Loss,Black,Italy
+2/18/2025,11:59:59 PM,190,307,Win,Black,USA
+2/18/2025,11:59:59 PM,191,299,Loss,Black,Brazil
+2/22/2025,11:59:59 PM,192,307,Win,White,Poland
+2/22/2025,11:59:59 PM,193,315,Win,Black,Poland
+2/22/2025,11:59:59 PM,194,307,Loss,White,India
+2/22/2025,11:59:59 PM,195,307,Draw,White,South Korea
+2/22/2025,11:59:59 PM,196,315,Win,Black,USA
+2/23/2025,11:59:59 PM,197,307,Loss,Black,France
+2/23/2025,11:59:59 PM,198,315,Win,White,Poland
+2/23/2025,11:59:59 PM,199,323,Win,Black,United Kingdom
+2/23/2025,11:59:59 PM,200,315,Loss,Black,Saudi Arabia
+2/28/2025,11:59:59 PM,201,323,Win,White,Canada
+2/28/2025,11:59:59 PM,202,332,Win,White,USA
+2/28/2025,11:59:59 PM,203,324,Loss,White,Canada
+3/7/2025,11:59:59 PM,204,332,Win,Black,Netherlands
+3/9/2025,11:59:59 PM,205,324,Loss,Black,USA
+3/9/2025,11:59:59 PM,206,324,Draw,White,Canada
+3/9/2025,11:59:59 PM,207,332,Win,Black,Canada
+3/11/2025,11:59:59 PM,208,324,Loss,White,India
+3/11/2025,11:59:59 PM,209,324,Draw,Black,Pakistan
+3/11/2025,11:59:59 PM,210,316,Loss,White,Pakistan
+3/14/2025,11:59:59 PM,211,308,Loss,Black,USA
+3/14/2025,11:59:59 PM,212,300,Loss,White,Poland
+3/16/2025,11:59:59 PM,213,307,Win,Black,France
+3/16/2025,11:59:59 PM,214,315,Win,Black,Chile
+3/16/2025,11:59:59 PM,215,306,Loss,White,Mexico
+3/16/2025,11:59:59 PM,216,298,Loss,Black,Mexico
+3/19/2025,11:59:59 PM,217,290,Loss,White,France
+3/19/2025,11:59:59 PM,218,298,Win,White,USA
+3/19/2025,11:59:59 PM,219,290,Loss,White,USA
+3/19/2025,11:59:59 PM,219A,290,Draw,Black,India
+3/20/2025,11:59:59 PM,220,282,Loss,White,Canada
+3/20/2025,11:59:59 PM,221,274,Loss,Black,USA
+3/20/2025,11:59:59 PM,222,266,Loss,White,India
+3/20/2025,11:59:59 PM,223,258,Loss,Black,United Kingdom
+3/20/2025,11:59:59 PM,224,250,Loss,White,Vietnam
+3/21/2025,11:59:59 PM,225,242,Loss,Black,Brazil
+3/21/2025,11:59:59 PM,226,250,Win,Black,Tunisia
+3/26/2025,11:59:59 PM,227,250,Draw,White,Saint Lucia
+3/29/2025,11:59:59 PM,228,258,Win,White,France
+3/30/2025,11:59:59 PM,229,267,Win,White,United Kingdom
+3/30/2025,11:59:59 PM,230,259,Loss,White,France
+3/30/2025,11:59:59 PM,231,260,Draw,Black,Indonesia
+3/30/2025,11:59:59 PM,232,252,Loss,Black,United Kingdom
+3/30/2025,11:59:59 PM,233,260,Win,White,India
+4/3/2025,11:59:59 PM,234,252,Loss,Black,Hong Kong
+4/3/2025,11:59:59 PM,235,252,Draw,White,Canada
+4/17/2025,11:59:59 PM,236,260,Win,Black,Iran
+4/17/2025,11:59:59 PM,237,268,Win,White,France
+4/20/2025,11:59:59 PM,238,260,Loss,Black,Pakistan
+4/20/2025,11:59:59 PM,239,268,Win,Black,USA
+4/23/2025,11:59:59 PM,240,260,Loss,White,USA
+4/23/2025,11:59:59 PM,241,268,Win,White,Mexico
+4/26/2025,11:59:59 PM,242,260,Loss,Black,Denmark
+4/26/2025,11:59:59 PM,243,252,Loss,White,Germany
+4/26/2025,11:59:59 PM,244,244,Loss,White,Brazil
+4/27/2025,11:59:59 PM,245,236,Loss,White,USA
+4/27/2025,11:59:59 PM,246,228,Loss,White,Poland
+4/27/2025,11:59:59 PM,247,220,Loss,White,USA
+4/27/2025,11:59:59 PM,248,228,Win,Black,France
+4/27/2025,11:59:59 PM,249,236,Win,Black,Curacao
+4/27/2025,11:59:59 PM,250,244,Win,Black,Indonesia
+4/27/2025,11:59:59 PM,251,252,Win,White,India
+4/27/2025,11:59:59 PM,252,260,Win,Black,India
+4/27/2025,11:59:59 PM,253,260,Draw,White,Canada
+4/27/2025,11:59:59 PM,254,252,Loss,White,United Kingdom
+4/27/2025,11:59:59 PM,255,244,Loss,Black,United Kingdom
+4/29/2025,11:59:59 PM,256,252,Win,Black,Belgium
+4/29/2025,11:59:59 PM,257,260,Win,Black,France
+4/29/2025,11:59:59 PM,258,268,Win,Black,USA
+4/29/2025,11:59:59 PM,259,260,Loss,White,France
+4/29/2025,11:59:59 PM,260,268,Win,White,Russia
+4/29/2025,11:59:59 PM,261,276,Win,Black,Italy
+4/30/2025,11:59:59 PM,262,268,Loss,Black,Singapore
+4/30/2025,11:59:59 PM,263,260,Win,White,India
+4/30/2025,11:59:59 PM,264,268,Win,White,Russia
+4/30/2025,11:59:59 PM,265,261,Loss,White,Switzerland
+4/30/2025,11:59:59 PM,266,253,Loss,Black,USA
+4/30/2025,11:59:59 PM,267,261,Win,Black,Italy
+4/30/2025,11:59:59 PM,268,269,Win,Black,Netherlands
+4/30/2025,11:59:59 PM,269,261,Loss,White,USA
+4/30/2025,11:59:59 PM,270,261,Draw,Black,Dominican Republic
+4/30/2025,11:59:59 PM,271,269,Win,White,Iran
+5/1/2025,11:59:59 PM,272,277,Win,White,India
+5/1/2025,11:59:59 PM,273,285,Win,White,Switzerland
+5/1/2025,11:59:59 PM,274,285,Draw,Black,South Africa
+5/1/2025,11:59:59 PM,275,293,Win,White,France
+5/1/2025,11:59:59 PM,276,293,Draw,Black,Vietnam
+5/1/2025,11:59:59 PM,277,285,Loss,White,Mexico
+5/1/2025,11:59:59 PM,278,286,Draw,White,USA
+5/1/2025,11:59:59 PM,279,278,Loss,Black,Peru
+5/1/2025,11:59:59 PM,280,270,Loss,Black,USA
+5/3/2025,11:59:59 PM,281,278,Win,White,Brazil
+5/3/2025,11:59:59 PM,282,286,Win,Black,Mexico
+5/7/2025,11:59:59 PM,283,294,Win,White,France
+5/7/2025,11:59:59 PM,284,302,Win,White,Philippines
+5/9/2025,11:59:59 PM,285,311,Win,Black,Dominican Republic
+5/9/2025,11:59:59 PM,286,303,Loss,Black,Albania
+5/9/2025,11:59:59 PM,287,295,Loss,White,Brazil
+5/9/2025,11:59:59 PM,288,303,Win,Black,Philippines
+5/9/2025,11:59:59 PM,289,295,Loss,White,Saudi Arabia
+5/10/2025,11:59:59 PM,290,303,Win,Black,France
+5/10/2025,11:59:59 PM,291,295,Loss,White,Russia
+5/10/2025,11:59:59 PM,292,303,Win,White,Italy
+5/10/2025,11:59:59 PM,293,311,Win,Black,Poland
+5/10/2025,11:59:59 PM,294,319,Win,White,France
+5/10/2025,11:59:59 PM,295,327,Win,Black,USA
+5/10/2025,11:59:59 PM,296,327,Draw,Black,Spain
+5/11/2025,11:59:59 PM,297,319,Loss,White,Indonesia
+5/12/2025,11:59:59 PM,298,311,Loss,Black,USA
+5/12/2025,11:59:59 PM,299,303,Loss,White,Mexico
+5/15/2025,11:59:59 PM,300,294,Loss,Black,Denmark
+5/15/2025,11:59:59 PM,301,286,Loss,White,France
+5/15/2025,11:59:59 PM,302,278,Loss,Black,Ukraine
+5/15/2025,11:59:59 PM,303,270,Loss,Black,Switzerland
+5/15/2025,11:59:59 PM,304,278,Win,White,Bolivia
+5/15/2025,11:59:59 PM,305,278,Draw,Black,Peru
+5/15/2025,11:59:59 PM,306,269,Loss,White,Indonesia
+5/15/2025,11:59:59 PM,307,261,Loss,White,USA
+5/16/2025,11:59:59 PM,308,269,Win,White,India
+5/16/2025,11:59:59 PM,309,277,Win,White,Sweden
+5/16/2025,11:59:59 PM,310,285,Win,Black,Italy
+5/16/2025,11:59:59 PM,311,293,Win,White,Bolivia
+5/16/2025,11:59:59 PM,312,293,Draw,Black,USA
+5/17/2025,11:59:59 PM,313,285,Loss,White,Philippines
+5/17/2025,11:59:59 PM,314,285,Draw,White,Bangladesh
+5/17/2025,11:59:59 PM,315,293,Win,Black,USA
+5/17/2025,11:59:59 PM,316,285,Loss,White,France
+5/17/2025,11:59:59 PM,317,276,Loss,Black,USA
+5/17/2025,11:59:59 PM,318,284,Win,Black,USA
+5/17/2025,11:59:59 PM,319,276,Loss,White,USA
+5/17/2025,11:59:59 PM,320,285,Win,White,India
+5/17/2025,11:59:59 PM,321,285,Draw,White,Ukraine
+5/18/2025,11:59:59 PM,322,293,Win,Black,Indonesia
+5/18/2025,11:59:59 PM,323,285,Loss,Black,Egypt
+5/18/2025,11:59:59 PM,324,277,Loss,Black,USA
+5/18/2025,11:59:59 PM,325,286,Win,White,France
+5/19/2025,11:59:59 PM,326,294,Win,White,Cuba
+5/19/2025,11:59:59 PM,327,286,Loss,Black,Canada
+5/19/2025,11:59:59 PM,328,294,Win,White,Greece
+5/19/2025,11:59:59 PM,329,286,Loss,Black,Morocco
+5/19/2025,11:59:59 PM,330,294,Win,White,Germany
+5/19/2025,11:59:59 PM,331,286,Loss,Black,Brazil
+5/19/2025,11:59:59 PM,332,278,Loss,Black,USA
+5/19/2025,11:59:59 PM,333,287,Win,White,USA
+5/19/2025,11:59:59 PM,334,295,Win,Black,USA
+5/20/2025,11:59:59 PM,335,303,Win,White,Mayanmar
+5/20/2025,11:59:59 PM,336,311,Win,White,Philippines
+5/20/2025,11:59:59 PM,337,319,Win,Black,USA
+5/20/2025,11:59:59 PM,338,326,Win,Black,Thailand
+5/21/2025,11:59:59 PM,339,318,Loss,White,India
+5/21/2025,11:59:59 PM,340,310,Loss,Black,France
+5/21/2025,11:59:59 PM,341,318,Win,White,Iran
+5/21/2025,11:59:59 PM,342,326,Win,Black,USA
+5/21/2025,11:59:59 PM,343,317,Win,White,Brazil
+5/21/2025,11:59:59 PM,344,325,Win,Black,Czech Republic
+5/21/2025,11:59:59 PM,345,333,Win,White,USA
+5/21/2025,11:59:59 PM,346,341,Win,Black,Mexico
+5/22/2025,11:59:59 PM,347,349,Win,White,Japan
+5/22/2025,11:59:59 PM,348,341,Loss,Black,Colombia
+5/23/2025,11:59:59 PM,349,341,Draw,White,United Kingdom
+5/23/2025,11:59:59 PM,350,349,Win,Black,Brazil
+5/23/2025,11:59:59 PM,351,357,Win,White,India
+5/23/2025,11:59:59 PM,352,350,Loss,White,Brazil
+5/23/2025,11:59:59 PM,353,342,Loss,White,Canada
+5/24/2025,11:59:59 PM,354,334,Loss,White,Chile
+5/24/2025,11:59:59 PM,355,327,Loss,Black,Malaysia
+5/24/2025,11:59:59 PM,356,327,Draw,Black,USA
+5/24/2025,11:59:59 PM,357,335,Win,White,India
+5/25/2025,11:59:59 PM,358,327,Loss,Black,France
+5/25/2025,11:59:59 PM,359,327,Draw,Black,Chile
+5/25/2025,11:59:59 PM,360,335,Win,White,USA
+5/25/2025,11:59:59 PM,361,343,Win,White,Switzerland
+5/26/2025,11:59:59 PM,362,351,Win,White,Iraq
+5/26/2025,11:59:59 PM,363,358,Win,Black,Ecuador
+5/26/2025,11:59:59 PM,364,366,Win,Black,Israel
+5/27/2025,11:59:59 PM,365,374,Win,Black,Portugal
+5/28/2025,11:59:59 PM,366,366,Loss,White,Mexico
+5/28/2025,11:59:59 PM,367,374,Win,Black,Philippines
+5/28/2025,11:59:59 PM,368,374,Draw,White,France
+5/28/2025,11:59:59 PM,369,382,Win,White,USA
+5/28/2025,11:59:59 PM,370,390,Win,White,Morocco
+5/28/2025,11:59:59 PM,371,398,Win,Black,USA
+5/29/2025,11:59:59 PM,372,406,Win,Black,Iran
+5/29/2025,11:59:59 PM,373,414,Win,Black,USA
+5/29/2025,11:59:59 PM,374,422,Win,White,USA
+5/30/2025,11:59:59 PM,375,414,Loss,Black,Morocco
+5/30/2025,11:59:59 PM,376,422,Win,Black,USA
+5/30/2025,11:59:59 PM,377,414,Loss,Black,Brazil
+5/31/2025,11:59:59 PM,378,406,Loss,White,Peru
+5/31/2025,11:59:59 PM,379,398,Loss,White,Brazil
+5/31/2025,11:59:59 PM,380,406,Win,White,France
+5/31/2025,11:59:59 PM,381,406,Draw,Black,USA
+5/31/2025,11:59:59 PM,382,414,Win,Black,USA
+6/1/2025,11:59:59 PM,383,422,Win,White,France
+6/1/2025,11:59:59 PM,384,414,Loss,White,Spain
+6/2/2025,11:59:59 PM,385,422,Win,White,India
+6/2/2025,11:59:59 PM,386,414,Loss,Black,France
+6/2/2025,11:59:59 PM,387,422,Win,Black,Austria
+6/2/2025,11:59:59 PM,388,422,Draw,Black,USA
+6/2/2025,11:59:59 PM,389,414,Loss,White,Turkiye
+6/2/2025,11:59:59 PM,390,406,Loss,Black,France
+6/2/2025,11:59:59 PM,391,413,Win,White,Basque Country
+6/3/2025,11:59:59 PM,392,406,Loss,White,USA
+6/3/2025,11:59:59 PM,393,398,Loss,White,India
+6/3/2025,11:59:59 PM,394,406,Win,White,Philippines
+6/3/2025,11:59:59 PM,395,414,Win,Black,South Korea
+6/3/2025,11:59:59 PM,396,406,Loss,White,France
+6/3/2025,11:59:59 PM,397,398,Loss,Black,USA
+6/3/2025,11:59:59 PM,398,390,Loss,White,USA
+6/3/2025,11:59:59 PM,399,382,Loss,White,Germany
+6/3/2025,11:59:59 PM,400,390,Win,White,France
+6/3/2025,11:59:59 PM,401,398,Win,Black,Greece
+6/3/2025,11:59:59 PM,402,398,Draw,Black,USA
+6/3/2025,11:59:59 PM,403,405,Win,White,USA
+6/4/2025,11:59:59 PM,404,397,Loss,Black,India
+6/4/2025,11:59:59 PM,405,389,Loss,White,France
+6/4/2025,11:59:59 PM,406,389,Draw,Black,Ireland
+6/4/2025,11:59:59 PM,407,397,Win,White,Chile
+6/6/2025,11:59:59 PM,408,389,Loss,Black,Pakistan
+6/6/2025,11:59:59 PM,409,397,Win,White,India
+6/6/2025,11:59:59 PM,410,389,Loss,White,India
+6/6/2025,11:59:59 PM,411,397,Win,White,South Africa
+6/6/2025,11:59:59 PM,412,404,Win,Black,USA
+6/6/2025,11:59:59 PM,413,412,Win,White,USA
+6/6/2025,11:59:59 PM,414,404,Loss,Black,Argentina
+6/6/2025,11:59:59 PM,415,413,Win,Black,Brazil
+6/6/2025,11:59:59 PM,416,405,Loss,White,Mexico
+6/6/2025,11:59:59 PM,417,397,Loss,Black,Thailand
+6/6/2025,11:59:59 PM,418,405,Win,Black,Canada
+6/6/2025,11:59:59 PM,419,413,Win,White,South Korea
+6/6/2025,11:59:59 PM,420,413,Draw,White,Ukraine
+6/6/2025,11:59:59 PM,421,405,Loss,Black,Canada
+6/7/2025,11:59:59 PM,422,396,Loss,White,Brazil
+6/7/2025,11:59:59 PM,423,388,Loss,Black,India
+6/7/2025,11:59:59 PM,424,388,Draw,White,India
+6/7/2025,11:59:59 PM,425,396,Win,Black,India
+6/7/2025,11:59:59 PM,426,388,Loss,White,Iran
+6/7/2025,11:59:59 PM,427,380,Loss,White,India
+6/7/2025,11:59:59 PM,428,372,Loss,Black,Brazil
+6/7/2025,11:59:59 PM,429,364,Loss,White,Turkiye
+6/7/2025,11:59:59 PM,430,372,Win,Black,USA
+6/7/2025,11:59:59 PM,431,379,Win,Black,Ukraine
+6/7/2025,11:59:59 PM,432,371,Loss,White,South Africa
+6/7/2025,11:59:59 PM,433,362,Loss,Black,Indonesia
+6/7/2025,11:59:59 PM,434,370,Win,White,Brazil
+6/7/2025,11:59:59 PM,435,378,Win,Black,Haiti
+6/7/2025,11:59:59 PM,436,370,Loss,White,Italy
+6/7/2025,11:59:59 PM,437,378,Win,Black,USA
+6/8/2025,11:59:59 PM,438,386,Win,White,Poland
+6/8/2025,11:59:59 PM,439,378,Loss,Black,USA
+6/8/2025,11:59:59 PM,440,370,Loss,White,Brazil
+6/9/2025,11:59:59 PM,441,362,Loss,White,Pakistan
+6/9/2025,11:59:59 PM,442,354,Loss,White,Peru
+6/9/2025,11:59:59 PM,443,346,Loss,Black,Indonesia
+6/9/2025,11:59:59 PM,444,354,Win,Black,India
+6/9/2025,11:59:59 PM,445,362,Rule Violation,None,None
+6/9/2025,11:59:59 PM,446,354,Loss,Black,Iran
+6/9/2025,11:59:59 PM,447,354,Draw,White,France
+6/9/2025,11:59:59 PM,448,362,Win,White,Philippines
+6/9/2025,11:59:59 PM,449,354,Loss,Black,Brazil
+6/10/2025,11:59:59 PM,450,362,Win,White,France
+6/10/2025,11:59:59 PM,451,362,Draw,Black,France
+6/10/2025,11:59:59 PM,452,370,Win,White,Thailand
+6/10/2025,11:59:59 PM,453,378,Win,Black,Australia
+6/12/2025,11:59:59 PM,454,370,Loss,White,Pakistan
+6/12/2025,11:59:59 PM,455,378,Win,Black,Kazakhstan
+6/12/2025,11:59:59 PM,456,370,Loss,White,Guatamala
+6/13/2025,11:59:59 PM,457,378,Win,Black,France
+6/13/2025,11:59:59 PM,458,370,Loss,Black,Nigeria
+6/13/2025,11:59:59 PM,459,378,Win,Black,France
+6/14/2025,11:59:59 PM,460,369,Loss,White,Kazakhstan
+6/14/2025,11:59:59 PM,461,377,Win,Black,Russia
+6/14/2025,11:59:59 PM,462,368,Loss,White,Spain
+6/14/2025,11:59:59 PM,463,360,Loss,Black,Serbia
+6/15/2025,11:59:59 PM,464,368,Win,White,Colombia
+6/15/2025,11:59:59 PM,465,360,Loss,Black,Brazil
+6/15/2025,11:59:59 PM,466,352,Loss,White,Poland
+6/15/2025,11:59:59 PM,467,344,Loss,White,Brazil
+6/16/2025,11:59:59 PM,468,336,Loss,Black,Italy
+6/16/2025,11:59:59 PM,469,328,Loss,Black,France
+6/16/2025,11:59:59 PM,470,336,Win,White,USA
+6/16/2025,11:59:59 PM,471,328,Loss,White,Panama
+6/16/2025,11:59:59 PM,472,336,Win,White,Indonesia
+6/16/2025,11:59:59 PM,473,328,Loss,Black,Honduras
+6/16/2025,11:59:59 PM,474,328,Draw,White,Brazil
+6/16/2025,11:59:59 PM,475,336,Win,Black,Argentina
+6/17/2025,11:59:59 PM,476,344,Win,Black,Italy
+6/18/2025,11:59:59 PM,477,344,Draw,Black,Poland
+6/18/2025,11:59:59 PM,478,351,Win,Black,India
+6/18/2025,11:59:59 PM,479,343,Loss,White,Russia
+6/18/2025,11:59:59 PM,480,351,Win,White,Georgia
+6/18/2025,11:59:59 PM,481,343,Loss,Black,India
+6/18/2025,11:59:59 PM,482,352,Win,Black,India
+6/18/2025,11:59:59 PM,483,360,Win,Black,USA
+6/18/2025,11:59:59 PM,484,352,Loss,White,Canada
+6/20/2025,11:59:59 PM,485,344,Loss,White,Afghanistan
+6/20/2025,11:59:59 PM,486,336,Loss,White,Indonesia
+6/20/2025,11:59:59 PM,487,328,Loss,Black,Wales
+6/20/2025,11:59:59 PM,488,320,Loss,Black,Indonesia
+6/20/2025,11:59:59 PM,489,328,Win,White,Canada
+6/20/2025,11:59:59 PM,490,320,Loss,Black,Brazil
+6/21/2025,11:59:59 PM,491,328,Win,White,Mexico
+6/22/2025,11:59:59 PM,492,336,Win,Black,North Korea
+6/22/2025,11:59:59 PM,493,344,Win,White,Turkiye
+6/22/2025,11:59:59 PM,494,336,Loss,White,Kazakhstan
+6/22/2025,11:59:59 PM,495,328,Loss,Black,France
+6/22/2025,11:59:59 PM,496,337,Win,Black,Chile
+6/22/2025,11:59:59 PM,497,345,Win,Black,Australia
+6/24/2025,11:59:59 PM,498,353,Win,Black,Germany
+6/24/2025,11:59:59 PM,499,345,Loss,White,Austria
+6/24/2025,11:59:59 PM,500,353,Win,White,France
+6/24/2025,11:59:59 PM,501,361,Win,Black,France
+6/24/2025,11:59:59 PM,502,369,Win,Black,France
+6/24/2025,11:59:59 PM,503,361,Loss,White,Catalonia
+6/24/2025,11:59:59 PM,504,353,Loss,White,Netherlands
+6/24/2025,11:59:59 PM,505,345,Loss,White,Morocco
+6/24/2025,11:59:59 PM,506,337,Loss,Black,Morocco
+6/25/2025,11:59:59 PM,507,345,Win,Black,Mexico
+6/25/2025,11:59:59 PM,508,337,Loss,White,France
+6/25/2025,11:59:59 PM,509,345,Win,Black,United Kingdom
+6/25/2025,11:59:59 PM,510,354,Win,Black,Spain
+6/25/2025,11:59:59 PM,511,346,Loss,White,Saudi Arabia
+6/25/2025,11:59:59 PM,512,354,Win,White,India
+6/26/2025,11:59:59 PM,513,346,Loss,White,Netherlands
+6/26/2025,11:59:59 PM,514,354,Win,Black,USA
+6/27/2025,11:59:59 PM,515,354,Draw,White,Sri Lanka
+6/27/2025,11:59:59 PM,516,362,Win,White,Hungary
+6/27/2025,11:59:59 PM,517,354,Loss,Black,India
+6/27/2025,11:59:59 PM,518,362,Win,Black,United Kingdom
+6/27/2025,11:59:59 PM,519,354,Loss,White,India
+6/27/2025,11:59:59 PM,520,346,Loss,Black,Iran
+6/27/2025,11:59:59 PM,521,339,Loss,Black,Hong Kong
+6/27/2025,11:59:59 PM,522,348,Win,White,United Kingdom
+6/27/2025,11:59:59 PM,523,356,Win,Black,Tunisia
+6/27/2025,11:59:59 PM,524,356,Draw,White,India
+6/27/2025,11:59:59 PM,525,364,Win,Black,Mexico
+6/29/2025,11:59:59 PM,526,356,Loss,White,Switzerland
+6/29/2025,11:59:59 PM,527,364,Win,White,Spain
+6/29/2025,11:59:59 PM,528,356,Loss,Black,Canada
+6/29/2025,11:59:59 PM,529,364,Win,Black,France
+6/29/2025,11:59:59 PM,530,364,Draw,White,France
+6/30/2025,1:17:33 AM,531,356,Loss,White,USA
+6/30/2025,1:17:33 AM,532,348,Loss,Black,Indonesia
+6/30/2025,1:47:08 PM,533,340,Loss,Black,Russia
+6/30/2025,2:07:27 PM,534,348,Win,Black,Spain
+6/30/2025,4:05:30 PM,535,340,Loss,White,USA
+6/30/2025,4:18:10 PM,536,340,Draw,White,USA
+7/1/2025,2:01:20 PM,537,348,Win,Black,India
+7/1/2025,2:11:37 PM,538,356,Win,Black,India
+7/1/2025,2:31:42 PM,539,348,Loss,Black,France
+7/1/2025,2:47:29 PM,540,355,Win,Black,France
+7/1/2025,2:59:29 PM,541,346,Loss,White,France
+7/1/2025,3:15:42 PM,542,354,Win,Black,Uzbekistan
+7/1/2025,4:45:29 PM,543,354,Draw,White,Germany
+7/3/2025,3:08:35 PM,544,362,Win,Black,USA
+7/3/2025,6:18:00 PM,545,370,Win,Black,Germany
+7/3/2025,10:23:16 PM,546,362,Loss,Black,Canada
+7/3/2025,11:57:02 PM,547,354,Loss,Black,Colombia
+7/4/2025,5:35:30 PM,548,346,Loss,White,United Kingdom
+7/4/2025,5:55:03 PM,549,354,Win,Black,United Kingdom
+7/4/2025,11:17:18 PM,550,346,Loss,Black,Kyrgyztan
+7/4/2025,11:32:05 PM,551,337,Loss,White,Guatamala
+7/6/2025,2:08:48 AM,552,337,Draw,White,Guatamala
+7/6/2025,2:20:32 AM,553,337,Draw,Black,Vietnam
+7/6/2025,2:32:03 AM,554,345,Win,White,India
+7/6/2025,2:42:41 AM,555,339,Loss,Black,India
+7/6/2025,2:50:59 AM,556,347,Win,Black,India
+7/6/2025,7:00:32 PM,557,355,Win,White,Hungary
+7/7/2025,6:07:29 PM,558,363,Win,White,USA
+7/7/2025,6:16:34 PM,559,355,Loss,Black,Egypt
+7/7/2025,6:32:51 PM,560,347,Loss,Black,Russia
+7/7/2025,6:42:53 PM,561,339,Loss,Black,USA
+7/7/2025,8:23:14 PM,562,347,Win,Black,Philippines
+,,563,,Future Game,Future Game,
+,,564,,Future Game,Future Game,
+,,565,,Future Game,Future Game,
+,,566,,Future Game,Future Game,
+,,567,,Future Game,Future Game,
+,,568,,Future Game,Future Game,
+,,569,,Future Game,Future Game,
+,,570,,Future Game,Future Game,
+,,571,,Future Game,Future Game,
+,,572,,Future Game,Future Game,
+,,573,,Future Game,Future Game,
+,,574,,Future Game,Future Game,
+,,575,,Future Game,Future Game,
+,,576,,Future Game,Future Game,
+,,577,,Future Game,Future Game,
+,,578,,Future Game,Future Game,
+,,579,,Future Game,Future Game,
+,,580,,Future Game,Future Game,
+,,581,,Future Game,Future Game,
+,,582,,Future Game,Future Game,
+,,583,,Future Game,Future Game,
+,,584,,Future Game,Future Game,
+,,585,,Future Game,Future Game,
+,,586,,Future Game,Future Game,
+,,587,,Future Game,Future Game,
+,,588,,Future Game,Future Game,
+,,589,,Future Game,Future Game,
+,,590,,Future Game,Future Game,
+,,591,,Future Game,Future Game,
+,,592,,Future Game,Future Game,
+,,593,,Future Game,Future Game,
+,,594,,Future Game,Future Game,
+,,595,,Future Game,Future Game,
+,,596,,Future Game,Future Game,
+,,597,,Future Game,Future Game,
+,,598,,Future Game,Future Game,
+,,599,,Future Game,Future Game,
+,,600,,Future Game,Future Game,
+,,601,,Future Game,Future Game,
+,,602,,Future Game,Future Game,
+,,603,,Future Game,Future Game,
+,,604,,Future Game,Future Game,
+,,605,,Future Game,Future Game,
+,,606,,Future Game,Future Game,
+,,607,,Future Game,Future Game,
+,,608,,Future Game,Future Game,
+,,609,,Future Game,Future Game,
+,,610,,Future Game,Future Game,
+,,611,,Future Game,Future Game,
+,,612,,Future Game,Future Game,
+,,613,,Future Game,Future Game,
+,,614,,Future Game,Future Game,
+,,615,,Future Game,Future Game,
+,,616,,Future Game,Future Game,
+,,617,,Future Game,Future Game,
+,,618,,Future Game,Future Game,
+,,619,,Future Game,Future Game,
+,,620,,Future Game,Future Game,
+,,621,,Future Game,Future Game,
+,,622,,Future Game,Future Game,
+,,623,,Future Game,Future Game,
+,,624,,Future Game,Future Game,
+,,625,,Future Game,Future Game,
+,,626,,Future Game,Future Game,
+,,627,,Future Game,Future Game,
+,,628,,Future Game,Future Game,
+,,629,,Future Game,Future Game,
+,,630,,Future Game,Future Game,
+,,631,,Future Game,Future Game,
+,,632,,Future Game,Future Game,
+,,633,,Future Game,Future Game,
+,,634,,Future Game,Future Game,
+,,635,,Future Game,Future Game,
+,,636,,Future Game,Future Game,
+,,637,,Future Game,Future Game,
+,,638,,Future Game,Future Game,
+,,639,,Future Game,Future Game,
+,,640,,Future Game,Future Game,
+,,641,,Future Game,Future Game,
+,,642,,Future Game,Future Game,
+,,643,,Future Game,Future Game,
+,,644,,Future Game,Future Game,
+,,645,,Future Game,Future Game,
+,,646,,Future Game,Future Game,
+,,647,,Future Game,Future Game,
+,,648,,Future Game,Future Game,
+,,649,,Future Game,Future Game,
+,,650,,Future Game,Future Game,
+,,651,,Future Game,Future Game,
+,,652,,Future Game,Future Game,
+,,653,,Future Game,Future Game,
+,,654,,Future Game,Future Game,
+,,655,,Future Game,Future Game,
+,,656,,Future Game,Future Game,
+,,657,,Future Game,Future Game,
+,,658,,Future Game,Future Game,
+,,659,,Future Game,Future Game,
+,,660,,Future Game,Future Game,
+,,661,,Future Game,Future Game,
+,,662,,Future Game,Future Game,
+,,663,,Future Game,Future Game,
+,,664,,Future Game,Future Game,
+,,665,,Future Game,Future Game,
+,,666,,Future Game,Future Game,
+,,667,,Future Game,Future Game,
+,,668,,Future Game,Future Game,
+,,669,,Future Game,Future Game,
+,,670,,Future Game,Future Game,
+,,671,,Future Game,Future Game,
+,,672,,Future Game,Future Game,
+,,673,,Future Game,Future Game,
+,,674,,Future Game,Future Game,
+,,675,,Future Game,Future Game,
+,,676,,Future Game,Future Game,
+,,677,,Future Game,Future Game,
+,,678,,Future Game,Future Game,
+,,679,,Future Game,Future Game,
+,,680,,Future Game,Future Game,
+,,681,,Future Game,Future Game,
+,,682,,Future Game,Future Game,
+,,683,,Future Game,Future Game,
+,,684,,Future Game,Future Game,
+,,685,,Future Game,Future Game,
+,,686,,Future Game,Future Game,
+,,687,,Future Game,Future Game,
+,,688,,Future Game,Future Game,
+,,689,,Future Game,Future Game,
+,,690,,Future Game,Future Game,
+,,691,,Future Game,Future Game,
+,,692,,Future Game,Future Game,
+,,693,,Future Game,Future Game,
+,,694,,Future Game,Future Game,
+,,695,,Future Game,Future Game,
+,,696,,Future Game,Future Game,
+,,697,,Future Game,Future Game,
+,,698,,Future Game,Future Game,
+,,699,,Future Game,Future Game,
+,,700,,Future Game,Future Game,
+,,701,,Future Game,Future Game,
+,,702,,Future Game,Future Game,
+,,703,,Future Game,Future Game,
+,,704,,Future Game,Future Game,
+,,705,,Future Game,Future Game,
+,,706,,Future Game,Future Game,
+,,707,,Future Game,Future Game,
+,,708,,Future Game,Future Game,
+,,709,,Future Game,Future Game,
+,,710,,Future Game,Future Game,
+,,711,,Future Game,Future Game,
+,,712,,Future Game,Future Game,
+,,713,,Future Game,Future Game,
+,,714,,Future Game,Future Game,
+,,715,,Future Game,Future Game,
+,,716,,Future Game,Future Game,
+,,717,,Future Game,Future Game,
+,,718,,Future Game,Future Game,
+,,719,,Future Game,Future Game,
+,,720,,Future Game,Future Game,
+,,721,,Future Game,Future Game,
+,,722,,Future Game,Future Game,
+,,723,,Future Game,Future Game,
+,,724,,Future Game,Future Game,
+,,725,,Future Game,Future Game,
+,,726,,Future Game,Future Game,
+,,727,,Future Game,Future Game,
+,,728,,Future Game,Future Game,
+,,729,,Future Game,Future Game,
+,,730,,Future Game,Future Game,
+,,731,,Future Game,Future Game,
+,,732,,Future Game,Future Game,
+,,733,,Future Game,Future Game,
+,,734,,Future Game,Future Game,
+,,735,,Future Game,Future Game,
+,,736,,Future Game,Future Game,
+,,737,,Future Game,Future Game,
+,,738,,Future Game,Future Game,
+,,739,,Future Game,Future Game,
+,,740,,Future Game,Future Game,
+,,741,,Future Game,Future Game,
+,,742,,Future Game,Future Game,
+,,743,,Future Game,Future Game,
+,,744,,Future Game,Future Game,
+,,745,,Future Game,Future Game,
+,,746,,Future Game,Future Game,
+,,747,,Future Game,Future Game,
+,,748,,Future Game,Future Game,
+,,749,,Future Game,Future Game,
+,,750,,Future Game,Future Game,
+,,751,,Future Game,Future Game,
+,,752,,Future Game,Future Game,
+,,753,,Future Game,Future Game,
+,,754,,Future Game,Future Game,
+,,755,,Future Game,Future Game,
+,,756,,Future Game,Future Game,
+,,757,,Future Game,Future Game,
+,,758,,Future Game,Future Game,
+,,759,,Future Game,Future Game,
+,,760,,Future Game,Future Game,
+,,761,,Future Game,Future Game,
+,,762,,Future Game,Future Game,
+,,763,,Future Game,Future Game,
+,,764,,Future Game,Future Game,
+,,765,,Future Game,Future Game,
+,,766,,Future Game,Future Game,
+,,767,,Future Game,Future Game,
+,,768,,Future Game,Future Game,
+,,769,,Future Game,Future Game,
+,,770,,Future Game,Future Game,
+,,771,,Future Game,Future Game,
+,,772,,Future Game,Future Game,
+,,773,,Future Game,Future Game,
+,,774,,Future Game,Future Game,
+,,775,,Future Game,Future Game,
+,,776,,Future Game,Future Game,
+,,777,,Future Game,Future Game,
+,,778,,Future Game,Future Game,
+,,779,,Future Game,Future Game,
+,,780,,Future Game,Future Game,
+,,781,,Future Game,Future Game,
+,,782,,Future Game,Future Game,
+,,783,,Future Game,Future Game,
+,,784,,Future Game,Future Game,
+,,785,,Future Game,Future Game,
+,,786,,Future Game,Future Game,
+,,787,,Future Game,Future Game,
+,,788,,Future Game,Future Game,
+,,789,,Future Game,Future Game,
+,,790,,Future Game,Future Game,
+,,791,,Future Game,Future Game,
+,,792,,Future Game,Future Game,
+,,793,,Future Game,Future Game,
+,,794,,Future Game,Future Game,
+,,795,,Future Game,Future Game,
+,,796,,Future Game,Future Game,
+,,797,,Future Game,Future Game,
+,,798,,Future Game,Future Game,
+,,799,,Future Game,Future Game,
+,,800,,Future Game,Future Game,
+,,801,,Future Game,Future Game,
+,,802,,Future Game,Future Game,
+,,803,,Future Game,Future Game,
+,,804,,Future Game,Future Game,
+,,805,,Future Game,Future Game,
+,,806,,Future Game,Future Game,
+,,807,,Future Game,Future Game,
+,,808,,Future Game,Future Game,
+,,809,,Future Game,Future Game,
+,,810,,Future Game,Future Game,
+,,811,,Future Game,Future Game,
+,,812,,Future Game,Future Game,
+,,813,,Future Game,Future Game,
+,,814,,Future Game,Future Game,
+,,815,,Future Game,Future Game,
+,,816,,Future Game,Future Game,
+,,817,,Future Game,Future Game,
+,,818,,Future Game,Future Game,
+,,819,,Future Game,Future Game,
+,,820,,Future Game,Future Game,
+,,821,,Future Game,Future Game,
+,,822,,Future Game,Future Game,
+,,823,,Future Game,Future Game,
+,,824,,Future Game,Future Game,
+,,825,,Future Game,Future Game,
+,,826,,Future Game,Future Game,
+,,827,,Future Game,Future Game,
+,,828,,Future Game,Future Game,
+,,829,,Future Game,Future Game,
+,,830,,Future Game,Future Game,
+,,831,,Future Game,Future Game,
+,,832,,Future Game,Future Game,
+,,833,,Future Game,Future Game,
+,,834,,Future Game,Future Game,
+,,835,,Future Game,Future Game,
+,,836,,Future Game,Future Game,
+,,837,,Future Game,Future Game,
+,,838,,Future Game,Future Game,
+,,839,,Future Game,Future Game,
+,,840,,Future Game,Future Game,
+,,841,,Future Game,Future Game,
+,,842,,Future Game,Future Game,
+,,843,,Future Game,Future Game,
+,,844,,Future Game,Future Game,
+,,845,,Future Game,Future Game,
+,,846,,Future Game,Future Game,
+,,847,,Future Game,Future Game,
+,,848,,Future Game,Future Game,
+,,849,,Future Game,Future Game,
+,,850,,Future Game,Future Game,
+,,851,,Future Game,Future Game,
+,,852,,Future Game,Future Game,
+,,853,,Future Game,Future Game,
+,,854,,Future Game,Future Game,
+,,855,,Future Game,Future Game,
+,,856,,Future Game,Future Game,
+,,857,,Future Game,Future Game,
+,,858,,Future Game,Future Game,
+,,859,,Future Game,Future Game,
+,,860,,Future Game,Future Game,
+,,861,,Future Game,Future Game,
+,,862,,Future Game,Future Game,
+,,863,,Future Game,Future Game,
+,,864,,Future Game,Future Game,
+,,865,,Future Game,Future Game,
+,,866,,Future Game,Future Game,
+,,867,,Future Game,Future Game,
+,,868,,Future Game,Future Game,
+,,869,,Future Game,Future Game,
+,,870,,Future Game,Future Game,
+,,871,,Future Game,Future Game,
+,,872,,Future Game,Future Game,
+,,873,,Future Game,Future Game,
+,,874,,Future Game,Future Game,
+,,875,,Future Game,Future Game,
+,,876,,Future Game,Future Game,
+,,877,,Future Game,Future Game,
+,,878,,Future Game,Future Game,
+,,879,,Future Game,Future Game,
+,,880,,Future Game,Future Game,
+,,881,,Future Game,Future Game,
+,,882,,Future Game,Future Game,
+,,883,,Future Game,Future Game,
+,,884,,Future Game,Future Game,
+,,885,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
+,,,,Future Game,Future Game,
