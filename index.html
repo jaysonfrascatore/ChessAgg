@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chess Outcome Tracker</title>
+  <title>Chess Outcome Analayzer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script>
     tailwind.config = {
       theme: {
@@ -99,6 +99,7 @@
       visibility: visible;
       opacity: 1;
     }
+
   </style>
 </head>
 <body class="bg-darkBg text-gray-100 min-h-screen">
@@ -108,12 +109,12 @@
       <div class="flex items-center justify-center gap-3 mb-4">
         <i class="fas fa-chess text-3xl text-chessWhite"></i>
         <h1 class="text-3xl font-bold bg-gradient-to-r from-chessWhite via-chessDraw to-chessBlack bg-clip-text text-transparent">
-          Chess Outcome Tracker
+          Chess Outcome Analyzer
         </h1>
       </div>
       
       <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
-        The Chess Outcome Tracker is a comprehensive dashboard tracking chess win percentages for White, Black, and Draws. It visualizes performance trends, highlights areas of improvement by side, and uncovers patterns in game outcomes over time. It is designed to provide clear, data-driven insights that support a deeper understanding of playing strengths and weaknesses.
+        The Chess Outcome Analyzer is a comprehensive dashboard tracking chess win percentages and outcomes for White, Black, and Draws. It visualizes performance trends, highlights areas of improvement by side, and uncovers patterns in game outcomes over time. It is designed to provide clear, data-driven insights that support a deeper understanding of strengths and weaknesses.
       </p>
       
       <div class="flex flex-col items-center mb-8">
@@ -150,7 +151,7 @@
       <div class="stat-card">
         <div class="flex items-center gap-2 text-gray-400 justify-center">
           <i class="fas fa-chess-king text-chessWhite"></i>
-          <span>White Wins</span>
+          <span>White Win Percentage</span>
         </div>
         <div class="stat-value text-chessWhite" id="whiteWinPct">0%</div>
         <div class="text-sm text-gray-500" id="whiteGames">0 games</div>
@@ -159,7 +160,7 @@
       <div class="stat-card">
         <div class="flex items-center gap-2 text-gray-400 justify-center">
           <i class="fas fa-chess-king text-chessBlack"></i>
-          <span>Black Wins</span>
+          <span>Black Win Percentage</span>
         </div>
         <div class="stat-value text-chessBlack" id="blackWinPct">0%</div>
         <div class="text-sm text-gray-500" id="blackGames">0 games</div>
@@ -191,7 +192,7 @@
           <span>Edge Adjusted Leader</span>
           <div class="tooltip">
             <i class="fas fa-info-circle text-gray-600"></i>
-            <span class="tooltip-text">The Edge Adjusted Leader compensates for imbalance in the side played. Up to a 2.5% boost may be applied to Black or White is overrepresented. See the methodology statement below.</span>
+            <span class="tooltip-text">The Edge Adjusted Leader compensates for imbalance in the side played. Up to a 2.5% dynamic boost may be applied to Black or White is overrepresented. See the methodology statement below.</span>
           </div>
         </div>
         <div class="stat-value" id="edge-adjusted-leader">N/A</div>
@@ -199,27 +200,41 @@
       </div>
     </div>
 
-    <!-- Leader streak info -->
+
+<!-- Second Chart: White/Black Win-Loss Differences -->
+<div id="diff-widgets" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-4xl mx-auto">
+  <div class="stat-card">
+    <div class="flex items-center justify-center gap-2" style="color: #00f5d4;">
+      <i class="fas fa-arrow-up"></i>
+      <span>White Win/Loss Margin</span>
+    </div>
+    <div class="stat-value" id="whiteDiff" style="color: #00f5d4;">+0</div>
+  </div>
+
+  <div class="stat-card">
+    <div class="flex items-center justify-center gap-2" style="color: #058c42;">
+      <i class="fas fa-arrow-up"></i>
+      <span>Black Win/Loss Margin</span>
+    </div>
+    <div class="stat-value" id="blackDiff" style="color: #058c42;">+0</div>
+  </div>
+</div>
+
+ <!-- Leader streak info -->
     <div id="leader-streak" class="text-center font-semibold mb-8 text-lg"></div>
 
-    <!-- Timestamp -->
+<!-- Timestamp -->
     <div id="last-updated" class="text-gray-400 text-sm mb-4 select-none"></div>
 
-    
     <!-- Chart Section -->
     <div class="bg-darkerBg rounded-xl p-4 border border-gray-1000 shadow-lg mb-8 max-w-6xl mx-auto">
       <div id="chart-container" class="w-full h-[700px]">
         <div id="chessChart" class="w-full h-full"></div>
       </div>
     </div>
-    
-    <!-- New Second Chart: Color Distribution -->
-    <div class="bg-darkerBg rounded-xl p-4 border border-gray-1000 shadow-lg mb-12 max-w-6xl mx-auto">
-      <div id="colorChart" class="w-full h-[600px]"></div>
-    </div>
 
-    <!-- Info Section -->
-    <div class="text-center text-gray-500 text-sm max-w-3xl mx-auto">
+        <!-- Info Section -->
+    <div class="text-center text-gray-500 text-sm max-w-3xl mx-auto mb-8">
       <p class="mb-2">
         <i class="fas fa-info-circle mr-1"></i> White and Black win percentages are based only on games played as that side. Draw percentages are based on all games.
       </p>
@@ -227,26 +242,40 @@
         <i class="fas fa-calculator mr-1"></i>The Edge Adjusted Leader compensates for imbalance in the side played. Up to a 2.5% boost may be applied to equalize the number of games and normalize the win percentage.
       </p>
     </div>
-  </div>
+    
+    <!-- Second Chart: Side Distribution -->
+    <div class="bg-darkerBg rounded-xl p-4 border border-gray-1000 shadow-lg mb-12 max-w-6xl mx-auto">
+      <div id="colorChart" class="w-full h-[600px]"></div>
+    </div>
 
- <!-- Methodology Section -->
-<div class="bg-cardBg rounded-xl p-6 border border-gray-700 shadow-lg max-w-5xl mx-auto mb-12">
-  <h2 class="text-2xl font-bold mb-4 text-white flex items-center gap-2">
-    <i class="fas fa-flask text-chessDraw"></i> Methodology
-  </h2>
-  <p class="text-gray-300 mb-3">
-    The Chess Outcome Tracker calculates cumulative win percentages over time for White, Black, and Draws. Win percentages are based solely on games played from each side, while draws are counted across all games.
-  </p>
-  <p class="text-gray-300 mb-3">
-    When there is a significant imbalance in how often one side is played, a dynamic boost is applied to the side with less games to prevent skewed win percentage margins. For example, if 16 more games have been played as White, Black's win percentage lead will receive a small boost during edge-adjusted leader calculations to compensate for underrepresentation.
-  </p>
-  <p class="text-gray-300 mb-3">
-    This adjustment starts when the difference reaches 5 games or more. It scales based on how wide the imbalance is, from a minor 0.5% to a maximum of 2.5%. If the number of games played as White and Black is nearly even (less than 5 apart), no adjustment is applied. The boost applied to the side with less games, scales the imbalance in games played, starting at 0% for differences of 0 to 4 games, increasing to 0.5% for 5 to 7 games, 1.0% for 8 to 11 games, 1.75% for 12 to 15 games, and maxing out at 2.5% for a 16 or more game difference.
-  </p>
-  <p class="text-gray-500 italic">
-    Example: If 12 more games were played as Black, White receives a 1.75% adjustment when determining the edge-adjusted leader.
-  </p>
+<!-- Third Chart: Raw Outcome Breakdown -->
+<div class="bg-darkerBg rounded-xl p-4 border border-gray-1000 shadow-lg mb-12 max-w-6xl mx-auto">
+  <div id="rawOutcomeContainer" class="w-full h-[600px] relative flex flex-col justify-center items-center">
+    <div id="rawOutcomeChart" class="w-full h-full"></div>
+    <div class="absolute text-white text-xl font-semibold flex items-center gap-2 z-10">
+    </div>
+  </div>
 </div>
+
+    <!-- Methodology Section -->
+    <div class="bg-cardBg rounded-xl p-6 border border-gray-700 shadow-lg max-w-5xl mx-auto mb-12">
+      <h2 class="text-2xl font-bold mb-4 text-white flex items-center gap-2">
+        <i class="fas fa-flask text-chessDraw"></i> Methodology
+      </h2>
+      <p class="text-gray-300 mb-3">
+        The Chess Outcome Analyzer calculates cumulative win percentages over time for games played as White, Black, and Draws. Win percentages are based solely on games played from each side, while draws are counted across all games.
+      </p>
+      <p class="text-gray-300 mb-3">
+        When there is a significant imbalance in how often one side is played, a dynamic boost is applied to the side with less games to prevent skewed win percentage margins. For example, if 16 more games have been played as White, Black's win percentage margin will receive a small boost during edge-adjusted leader calculations to compensate for underrepresentation.
+      </p>
+      <p class="text-gray-300 mb-3">
+        This adjustment starts when the difference reaches 5 games or more. It scales based on how wide the imbalance is, from a minor 0.5% to a maximum of 2.5%. If the number of games played as White and Black is nearly even (less than 5 apart), no adjustment is applied. The boost applied to the side with less games, scales the imbalance in games played, starting at 0% for differences of 0 to 4 games, increasing to 0.5% for 5 to 7 games, 1.0% for 8 to 11 games, 1.75% for 12 to 15 games, and maxing out at 2.5% for a 16 or more game difference.
+      </p>
+      <p class="text-gray-500 italic">
+        Example: If 12 more games were played as Black than White, White receives a 1.75% adjustment when determining the edge-adjusted leader.
+      </p>
+    </div>
+  </div>
 
   <script>
     function parseCSV(text) {
@@ -256,7 +285,7 @@
         const values = line.split(',');
         let obj = {};
         headers.forEach((h, i) => {
-          obj[h.trim()] = values[i].trim();
+          obj[h.trim()] = values[i]?.trim() || '';
         });
         return obj;
       });
@@ -318,6 +347,9 @@
       let whiteCount = 0, blackCount = 0;
       let whiteCountArr = [], blackCountArr = [];
 
+      // Track wins vs losses for diff widgets
+      let whiteLosses = 0, blackLosses = 0;
+
       data.forEach((d, i) => {
         const side = d['Side'].toLowerCase();
         const outcome = d['Outcome'];
@@ -325,10 +357,12 @@
         if (side === 'white') {
           whiteGames++;
           whiteCount++;
+          if (outcome === 'Loss') whiteLosses++;
         }
         if (side === 'black') {
           blackGames++;
           blackCount++;
+          if (outcome === 'Loss') blackLosses++;
         }
         totalGames++;
 
@@ -345,7 +379,6 @@
         drawPct.push((draws / totalGames) * 100);
         margin.push(wPct - bPct);
 
-        // Append cumulative counts per game:
         whiteCountArr.push(whiteCount);
         blackCountArr.push(blackCount);
       });
@@ -388,7 +421,7 @@
       const adjustedW = whiteWinPctCurrent;
       const adjustedB = blackWinPctCurrent + blackBoost;
 
-            let edgeLeader = 'None', edgeLeaderPct = 0;
+      let edgeLeader = 'None', edgeLeaderPct = 0;
       if (adjustedW > adjustedB && adjustedW > drawPctCurrent) {
         edgeLeader = 'White';
         edgeLeaderPct = adjustedW - Math.max(adjustedB, drawPctCurrent);
@@ -398,8 +431,7 @@
       } else if (drawPctCurrent > adjustedW && drawPctCurrent > adjustedB) {
         edgeLeader = 'Draw';
         edgeLeaderPct = drawPctCurrent - Math.max(adjustedW, adjustedB);
-}
-
+      }
 
       updateHeader(
         whiteGames, blackGames, draws, totalGames,
@@ -419,6 +451,10 @@
       } else {
         leaderStreakDiv.textContent = '';
       }
+
+      // Update diff widgets
+      document.getElementById('whiteDiff').textContent = `+${whiteWins - whiteLosses}`;
+      document.getElementById('blackDiff').textContent = `+${blackWins - blackLosses}`;
 
       return {
         totalGamesArr: data.map((_, i) => i + 1),
@@ -483,7 +519,7 @@
 
       const layout = {
         title: {
-          text: 'Cumulative Chess Outcome Percentages',
+          text: 'Cumulative Win Percentages',
           font: {
             color: '#E2E8F0',
             size: 24
@@ -611,20 +647,22 @@
     }
 
     // Load default CSV from GitHub on page load
-window.addEventListener('DOMContentLoaded', () => {
-  fetch('data/Chess_Database_7-7-2025.csv')
-    .then(response => response.text())
-    .then(csvText => {
-      const data = parseCSV(csvText);
-      const processedData = processData(data);
-      renderChart(processedData);
-      renderColorCountChart(processedData);
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('data/Chess_Database_7-10-2025.csv')
+        .then(response => response.text())
+        .then(csvText => {
+          const data = parseCSV(csvText);
+          const processedData = processData(data);
+          renderChart(processedData);
+          renderColorCountChart(processedData);
+          renderRawOutcomeChart(data);
 
-      // Update timestamp
-      document.getElementById('last-updated').textContent = formatDateTime(new Date());
-    })
-    .catch(err => console.error("Failed to load default CSV:", err));
-});
+
+          // Update timestamp
+          document.getElementById('last-updated').textContent = formatDateTime(new Date());
+        })
+        .catch(err => console.error("Failed to load default CSV:", err));
+    });
 
     document.getElementById('csvFile').addEventListener('change', function (e) {
       const file = e.target.files[0];
@@ -639,6 +677,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
         // Render the White/Black count chart
         renderColorCountChart(processedData);
+
+        // Render the Raw Outcome
+        renderRawOutcomeChart(data);
 
         // Update file input label
         const label = document.querySelector('.file-input-label span');
@@ -660,6 +701,85 @@ window.addEventListener('DOMContentLoaded', () => {
       const timePart = date.toLocaleTimeString('en-US', timeOptions).toUpperCase();
       return `Last Updated: ${datePart} at ${timePart}`;
     }
-  </script>
+
+    function renderRawOutcomeChart(data) {
+  let whiteWin = 0, whiteDraw = 0, whiteLoss = 0;
+  let blackWin = 0, blackDraw = 0, blackLoss = 0;
+
+  const x = data.map((_, i) => i + 1);  // game numbers 1,2,3,...
+
+  const wwRaw = [], wdRaw = [], wlRaw = [];
+  const bwRaw = [], bdRaw = [], blRaw = [];
+
+  data.forEach(row => {
+    const outcome = row["Outcome"];
+    const side = row["Side"];
+
+    if (side === "White") {
+      if (outcome === "Win") whiteWin++;
+      else if (outcome === "Draw") whiteDraw++;
+      else if (outcome === "Loss") whiteLoss++;
+
+      wwRaw.push(whiteWin);
+      wdRaw.push(whiteDraw);
+      wlRaw.push(whiteLoss);
+
+      // For Black side, keep the previous count (no change this game)
+      bwRaw.push(blackWin);
+      bdRaw.push(blackDraw);
+      blRaw.push(blackLoss);
+    } else if (side === "Black") {
+      if (outcome === "Win") blackWin++;
+      else if (outcome === "Draw") blackDraw++;
+      else if (outcome === "Loss") blackLoss++;
+
+      bwRaw.push(blackWin);
+      bdRaw.push(blackDraw);
+      blRaw.push(blackLoss);
+
+      // For White side, keep previous count (no change this game)
+      wwRaw.push(whiteWin);
+      wdRaw.push(whiteDraw);
+      wlRaw.push(whiteLoss);
+    }
+  });
+
+  // Now plot using single x array for all
+  const traces = [
+{ x, y: wwRaw, name: "White Wins", mode: "lines+markers", line: { color: "#00f5d4", width: 3 }, marker: { color: "#00f5d4" } },
+  { x, y: wdRaw, name: "White Draws", mode: "lines+markers", line: { color: "#A480CF", width: 3 }, marker: { color: "#A480CF" } },
+  { x, y: wlRaw, name: "White Losses", mode: "lines+markers", line: { color: "#ff002b", width: 3 }, marker: { color: "#ff002b" } },
+
+  { x, y: bwRaw, name: "Black Wins", mode: "lines+markers", line: { color: "#058c42", dash: "dot", width: 3 }, marker: { color: "#058c42" } },
+  { x, y: bdRaw, name: "Black Draws", mode: "lines+markers", line: { color: "#FF499E", dash: "dot", width: 3 }, marker: { color: "#FF499E" } },
+  { x, y: blRaw, name: "Black Losses", mode: "lines+markers", line: { color: "#f8961e", dash: "dot", width: 3 }, marker: { color: "#f8961e" } }
+  ];
+
+  const layout = {
+    title: {
+      text: "Performance Splits",
+      font: {
+        color: "#E2E8F0",
+        size: 24
+      },
+      x: 0.5,
+      xanchor: "center"
+    },
+    plot_bgcolor: "#0F172A",
+    paper_bgcolor: "#0F172A",
+    font: { color: "#E2E8F0" },
+    xaxis: { title: "Game Number", tickfont: { color: "#94A3B8" }, gridcolor: "#334155", linecolor: "#334155" },
+    yaxis: { title: "Count", rangemode: "tozero", tickfont: { color: "#94A3B8" }, gridcolor: "#334155", linecolor: "#334155" },
+    legend: { orientation: "h", y: -0.25 },
+    hoverlabel: {
+      bgcolor: "#1E293B",
+      bordercolor: "#334155",
+      font: { color: '#E2E8F0' },
+    }
+  };
+
+  Plotly.newPlot("rawOutcomeChart", traces, layout, { responsive: true });
+}
+</script>
 </body>
 </html>
