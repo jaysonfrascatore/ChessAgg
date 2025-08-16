@@ -1,0 +1,1100 @@
+Date,Game ID,Elo,Outcome,Side,Country
+1/1/2025,1,196,Loss,Black,USA
+1/1/2025,2,196,Draw,White,USA
+1/1/2025,3,205,Win,White,Indonesia
+1/1/2025,4,205,Draw,Black,Peru
+1/1/2025,5,213,Win,White,New Zealand
+1/1/2025,6,205,Loss,Black,USA
+1/1/2025,7,205,Draw,White,Germany
+1/1/2025,8,197,Loss,Black,USA
+1/2/2025,9,189,Loss,White,USA
+1/2/2025,10,189,Draw,Black,Iraq
+1/2/2025,11,181,Loss,Black,USA
+1/2/2025,12,189,Win,White,India
+1/2/2025,13,197,Win,Black,USA
+1/2/2025,14,205,Win,White,USA
+1/2/2025,15,205,Draw,White,France
+1/2/2025,16,197,Loss,White,Spain
+1/2/2025,17,189,Loss,White,USA
+1/2/2025,18,197,Win,Black,Poland
+1/2/2025,19,189,Loss,Black,India
+1/2/2025,20,181,Loss,White,India
+1/2/2025,21,189,Win,White,USA
+1/2/2025,22,188,Draw,Black,Indonesia
+1/3/2025,23,188,Draw,White,USA
+1/3/2025,24,188,Draw,Black,United Kingdom
+1/3/2025,25,196,Win,White,Isle of Man
+1/3/2025,26,188,Loss,White,India
+1/3/2025,27,179,Loss,Black,Brazil
+1/3/2025,28,179,Draw,Black,Pakistan
+1/3/2025,29,178,Draw,White,India
+1/3/2025,30,186,Win,Black,India
+1/3/2025,31,194,Win,White,Brazil
+1/4/2025,32,194,Draw,Black,France
+1/4/2025,33,194,Draw,White,Canada
+1/4/2025,34,186,Loss,Black,Kazakhstan
+1/4/2025,35,179,Loss,White,India
+1/4/2025,36,178,Draw,Black,USA
+1/4/2025,37,185,Win,White,USA
+1/5/2025,38,178,Loss,Black,Greenland
+1/5/2025,39,170,Loss,White,India
+1/5/2025,40,178,Win,Black,Indonesia
+1/5/2025,41,186,Win,White,USA
+1/5/2025,42,194,Win,White,India
+1/5/2025,43,186,Loss,Black,Vietnam
+1/5/2025,44,194,Win,White,USA
+1/5/2025,45,202,Win,Black,USA
+1/6/2025,46,210,Win,Black,Ecuador
+1/7/2025,47,217,Win,White,British Virgin Islands
+1/7/2025,48,225,Win,Black,USA
+1/7/2025,49,217,Loss,White,India
+1/7/2025,50,209,Loss,White,USA
+1/7/2025,51,217,Win,Black,Belgium
+1/7/2025,52,217,Draw,White,India
+1/8/2025,53,225,Win,Black,India
+1/8/2025,54,232,Win,White,Mexico
+1/8/2025,55,224,Loss,Black,Rwanda
+1/9/2025,56,216,Loss,White,Romania
+1/9/2025,57,208,Loss,Black,India
+1/9/2025,58,208,Draw,White,Brazil
+1/9/2025,59,200,Loss,White,Saudi Arabia
+1/9/2025,60,200,Draw,Black,South Africa
+1/9/2025,61,192,Loss,White,Spain
+1/9/2025,62,200,Win,White,Brazil
+1/9/2025,63,208,Win,Black,United Kingdom
+1/9/2025,64,200,Loss,Black,Canada
+1/9/2025,65,208,Win,White,Netherlands
+1/9/2025,66,200,Loss,Black,Canada
+1/9/2025,67,200,Draw,White,United Kingdom
+1/9/2025,68,208,Win,White,Canada
+1/9/2025,69,200,Loss,Black,Philippines
+1/10/2025,70,193,Loss,Black,USA
+1/10/2025,71,201,Win,White,USA
+1/11/2025,72,201,Draw,White,USA
+1/11/2025,73,194,Loss,Black,Georgia
+1/11/2025,74,202,Win,White,International
+1/11/2025,75,210,Win,Black,Mexico
+1/11/2025,76,218,Win,Black,India
+1/12/2025,77,226,Win,White,USA
+1/12/2025,78,218,Loss,Black,France
+1/12/2025,79,226,Win,White,Brazil
+1/12/2025,80,226,Draw,Black,India
+1/13/2025,81,218,Loss,White,Mexico
+1/13/2025,82,218,Draw,Black,USA
+1/13/2025,83,210,Loss,White,Japan
+1/13/2025,84,218,Win,Black,Vietnam
+1/13/2025,85,210,Loss,White,USA
+1/13/2025,86,218,Win,Black,India
+1/13/2025,87,226,Win,Black,India
+1/14/2025,88,217,Loss,Black,New Zealand
+1/14/2025,89,225,Win,White,India
+1/14/2025,90,217,Loss,White,India
+1/14/2025,91,225,Win,Black,Philippines
+1/15/2025,92,233,Win,Black,India
+1/15/2025,93,224,Loss,White,India
+1/15/2025,94,232,Win,White,Canada
+1/15/2025,95,240,Win,Black,Brazil
+1/16/2025,96,248,Win,White,USA
+1/17/2025,97,248,Draw,White,France
+1/17/2025,98,240,Loss,Black,USA
+1/17/2025,99,248,Win,Black,Mayanmar
+1/17/2025,100,256,Win,White,India
+1/17/2025,101,248,Loss,White,USA
+1/18/2025,102,240,Loss,Black,Canada
+1/18/2025,103,232,Loss,Black,India
+1/18/2025,104,240,Win,Black,Philippines
+1/18/2025,105,248,Win,White,Hungary
+1/18/2025,106,240,Loss,Black,Brazil
+1/18/2025,107,232,Loss,White,Italy
+1/18/2025,108,231,Draw,White,Poland
+1/18/2025,109,239,Win,Black,Italy
+1/19/2025,110,232,Loss,White,Estonia
+1/19/2025,111,240,Win,Black,India
+1/19/2025,112,232,Loss,Black,Thailand
+1/19/2025,113,240,Win,White,India
+1/19/2025,114,231,Loss,White,USA
+1/19/2025,115,239,Win,Black,USA
+1/19/2025,116,231,Loss,White,Malaysia
+1/19/2025,117,223,Loss,Black,Canada
+1/19/2025,118,232,Win,Black,Australia
+1/20/2025,119,224,Loss,White,Turkiye
+1/20/2025,120,232,Win,Black,India
+1/22/2025,121,232,Draw,Black,India
+1/24/2025,122,232,Draw,White,Australia
+1/24/2025,123,224,Loss,White,Thailand
+1/24/2025,124,232,Win,White,Mexico
+1/24/2025,125,224,Loss,White,Saudi Arabia
+1/24/2025,126,216,Loss,Black,Canada
+1/24/2025,127,224,Win,White,Brazil
+1/25/2025,128,225,Draw,White,Mexico
+1/25/2025,129,233,Win,Black,Egypt
+1/25/2025,130,234,Draw,White,USA
+1/25/2025,131,242,Win,Black,USA
+1/27/2025,132,250,Win,Black,France
+1/27/2025,133,242,Loss,White,India
+1/27/2025,134,234,Loss,Black,Chile
+1/27/2025,135,226,Loss,Black,USA
+1/28/2025,136,234,Win,White,India
+1/29/2025,137,226,Loss,Black,USA
+1/29/2025,138,218,Loss,Black,Argentina
+1/30/2025,139,226,Win,White,Egypt
+1/31/2025,140,233,Win,Black,Indonesia
+1/31/2025,141,225,Loss,White,France
+1/31/2025,142,225,Draw,Black,Iran
+2/1/2025,143,233,Win,White,Myanmar
+2/1/2025,144,241,Win,White,Philippines
+2/2/2025,145,241,Draw,White,USA
+2/2/2025,146,249,Win,Black,USA
+2/3/2025,147,257,Win,White,Gabon
+2/4/2025,148,249,Loss,Black,India
+2/4/2025,149,257,Win,White,USA
+2/4/2025,150,265,Win,Black,India
+2/5/2025,151,273,Win,Black,USA
+2/6/2025,152,266,Loss,White,India
+2/6/2025,153,265,Draw,White,USA
+2/6/2025,154,257,Loss,Black,Australia
+2/6/2025,155,265,Win,White,India
+2/6/2025,156,265,Draw,White,USA
+2/6/2025,157,273,Win,Black,USA
+2/7/2025,158,265,Loss,Black,Philippines
+2/7/2025,159,273,Win,White,India
+2/8/2025,160,265,Loss,Black,Australia
+2/8/2025,161,273,Win,White,Nepal
+2/8/2025,162,281,Win,White,USA
+2/8/2025,163,273,Loss,Black,South Korea
+2/8/2025,164,281,Win,White,India
+2/9/2025,165,289,Rule Violation,None,None
+2/9/2025,166,297,Win,Black,India
+2/9/2025,167,305,Win,White,Indonesia
+2/10/2025,168,297,Loss,Black,Thailand
+2/10/2025,169,305,Win,White,Brazil
+2/10/2025,170,313,Win,White,India
+2/10/2025,171,321,Win,Black,Russia
+2/10/2025,172,329,Win,White,USA
+2/11/2025,173,337,Win,White,USA
+2/11/2025,174,337,Draw,Black,Peru
+2/12/2025,175,329,Loss,Black,India
+2/12/2025,176,321,Loss,White,Argentina
+2/12/2025,177,321,Draw,White,India
+2/12/2025,178,313,Loss,Black,Indonesia
+2/13/2025,179,313,Draw,White,Denmark
+2/14/2025,180,321,Win,Black,USA
+2/14/2025,181,313,Loss,Black,India
+2/14/2025,182,306,Loss,White,India
+2/14/2025,183,298,Loss,Black,USA
+2/15/2025,184,306,Win,White,Canada
+2/15/2025,185,315,Win,White,USA
+2/16/2025,186,307,Loss,Black,India
+2/16/2025,187,315,Win,White,Pakistan
+2/17/2025,188,307,Loss,White,India
+2/18/2025,189,299,Loss,Black,Italy
+2/18/2025,190,307,Win,Black,USA
+2/18/2025,191,299,Loss,Black,Brazil
+2/22/2025,192,307,Win,White,Poland
+2/22/2025,193,315,Win,Black,Poland
+2/22/2025,194,307,Loss,White,India
+2/22/2025,195,307,Draw,White,South Korea
+2/22/2025,196,315,Win,Black,USA
+2/23/2025,197,307,Loss,Black,France
+2/23/2025,198,315,Win,White,Poland
+2/23/2025,199,323,Win,Black,United Kingdom
+2/23/2025,200,315,Loss,Black,Saudi Arabia
+2/28/2025,201,323,Win,White,Canada
+2/28/2025,202,332,Win,White,USA
+2/28/2025,203,324,Loss,White,Canada
+3/7/2025,204,332,Win,Black,Netherlands
+3/9/2025,205,324,Loss,Black,USA
+3/9/2025,206,324,Draw,White,Canada
+3/9/2025,207,332,Win,Black,Canada
+3/11/2025,208,324,Loss,White,India
+3/11/2025,209,324,Draw,Black,Pakistan
+3/11/2025,210,316,Loss,White,Pakistan
+3/14/2025,211,308,Loss,Black,USA
+3/14/2025,212,300,Loss,White,Poland
+3/16/2025,213,307,Win,Black,France
+3/16/2025,214,315,Win,Black,Chile
+3/16/2025,215,306,Loss,White,Mexico
+3/16/2025,216,298,Loss,Black,Mexico
+3/19/2025,217,290,Loss,White,France
+3/19/2025,218,298,Win,White,USA
+3/19/2025,219,290,Loss,White,USA
+3/19/2025,219A,290,Draw,Black,India
+3/20/2025,220,282,Loss,White,Canada
+3/20/2025,221,274,Loss,Black,USA
+3/20/2025,222,266,Loss,White,India
+3/20/2025,223,258,Loss,Black,United Kingdom
+3/20/2025,224,250,Loss,White,Vietnam
+3/21/2025,225,242,Loss,Black,Brazil
+3/21/2025,226,250,Win,Black,Tunisia
+3/26/2025,227,250,Draw,White,Saint Lucia
+3/29/2025,228,258,Win,White,France
+3/30/2025,229,267,Win,White,United Kingdom
+3/30/2025,230,259,Loss,White,France
+3/30/2025,231,260,Draw,Black,Indonesia
+3/30/2025,232,252,Loss,Black,United Kingdom
+3/30/2025,233,260,Win,White,India
+4/3/2025,234,252,Loss,Black,Hong Kong
+4/3/2025,235,252,Draw,White,Canada
+4/17/2025,236,260,Win,Black,Iran
+4/17/2025,237,268,Win,White,France
+4/20/2025,238,260,Loss,Black,Pakistan
+4/20/2025,239,268,Win,Black,USA
+4/23/2025,240,260,Loss,White,USA
+4/23/2025,241,268,Win,White,Mexico
+4/26/2025,242,260,Loss,Black,Denmark
+4/26/2025,243,252,Loss,White,Germany
+4/26/2025,244,244,Loss,White,Brazil
+4/27/2025,245,236,Loss,White,USA
+4/27/2025,246,228,Loss,White,Poland
+4/27/2025,247,220,Loss,White,USA
+4/27/2025,248,228,Win,Black,France
+4/27/2025,249,236,Win,Black,Curacao
+4/27/2025,250,244,Win,Black,Indonesia
+4/27/2025,251,252,Win,White,India
+4/27/2025,252,260,Win,Black,India
+4/27/2025,253,260,Draw,White,Canada
+4/27/2025,254,252,Loss,White,United Kingdom
+4/27/2025,255,244,Loss,Black,United Kingdom
+4/29/2025,256,252,Win,Black,Belgium
+4/29/2025,257,260,Win,Black,France
+4/29/2025,258,268,Win,Black,USA
+4/29/2025,259,260,Loss,White,France
+4/29/2025,260,268,Win,White,Russia
+4/29/2025,261,276,Win,Black,Italy
+4/30/2025,262,268,Loss,Black,Singapore
+4/30/2025,263,260,Win,White,India
+4/30/2025,264,268,Win,White,Russia
+4/30/2025,265,261,Loss,White,Switzerland
+4/30/2025,266,253,Loss,Black,USA
+4/30/2025,267,261,Win,Black,Italy
+4/30/2025,268,269,Win,Black,Netherlands
+4/30/2025,269,261,Loss,White,USA
+4/30/2025,270,261,Draw,Black,Dominican Republic
+4/30/2025,271,269,Win,White,Iran
+5/1/2025,272,277,Win,White,India
+5/1/2025,273,285,Win,White,Switzerland
+5/1/2025,274,285,Draw,Black,South Africa
+5/1/2025,275,293,Win,White,France
+5/1/2025,276,293,Draw,Black,Vietnam
+5/1/2025,277,285,Loss,White,Mexico
+5/1/2025,278,286,Draw,White,USA
+5/1/2025,279,278,Loss,Black,Peru
+5/1/2025,280,270,Loss,Black,USA
+5/3/2025,281,278,Win,White,Brazil
+5/3/2025,282,286,Win,Black,Mexico
+5/7/2025,283,294,Win,White,France
+5/7/2025,284,302,Win,White,Philippines
+5/9/2025,285,311,Win,Black,Dominican Republic
+5/9/2025,286,303,Loss,Black,Albania
+5/9/2025,287,295,Loss,White,Brazil
+5/9/2025,288,303,Win,Black,Philippines
+5/9/2025,289,295,Loss,White,Saudi Arabia
+5/10/2025,290,303,Win,Black,France
+5/10/2025,291,295,Loss,White,Russia
+5/10/2025,292,303,Win,White,Italy
+5/10/2025,293,311,Win,Black,Poland
+5/10/2025,294,319,Win,White,France
+5/10/2025,295,327,Win,Black,USA
+5/10/2025,296,327,Draw,Black,Spain
+5/11/2025,297,319,Loss,White,Indonesia
+5/12/2025,298,311,Loss,Black,USA
+5/12/2025,299,303,Loss,White,Mexico
+5/15/2025,300,294,Loss,Black,Denmark
+5/15/2025,301,286,Loss,White,France
+5/15/2025,302,278,Loss,Black,Ukraine
+5/15/2025,303,270,Loss,Black,Switzerland
+5/15/2025,304,278,Win,White,Bolivia
+5/15/2025,305,278,Draw,Black,Peru
+5/15/2025,306,269,Loss,White,Indonesia
+5/15/2025,307,261,Loss,White,USA
+5/16/2025,308,269,Win,White,India
+5/16/2025,309,277,Win,White,Sweden
+5/16/2025,310,285,Win,Black,Italy
+5/16/2025,311,293,Win,White,Bolivia
+5/16/2025,312,293,Draw,Black,USA
+5/17/2025,313,285,Loss,White,Philippines
+5/17/2025,314,285,Draw,White,Bangladesh
+5/17/2025,315,293,Win,Black,USA
+5/17/2025,316,285,Loss,White,France
+5/17/2025,317,276,Loss,Black,USA
+5/17/2025,318,284,Win,Black,USA
+5/17/2025,319,276,Loss,White,USA
+5/17/2025,320,285,Win,White,India
+5/17/2025,321,285,Draw,White,Ukraine
+5/18/2025,322,293,Win,Black,Indonesia
+5/18/2025,323,285,Loss,Black,Egypt
+5/18/2025,324,277,Loss,Black,USA
+5/18/2025,325,286,Win,White,France
+5/19/2025,326,294,Win,White,Cuba
+5/19/2025,327,286,Loss,Black,Canada
+5/19/2025,328,294,Win,White,Greece
+5/19/2025,329,286,Loss,Black,Morocco
+5/19/2025,330,294,Win,White,Germany
+5/19/2025,331,286,Loss,Black,Brazil
+5/19/2025,332,278,Loss,Black,USA
+5/19/2025,333,287,Win,White,USA
+5/19/2025,334,295,Win,Black,USA
+5/20/2025,335,303,Win,White,Mayanmar
+5/20/2025,336,311,Win,White,Philippines
+5/20/2025,337,319,Win,Black,USA
+5/20/2025,338,326,Win,Black,Thailand
+5/21/2025,339,318,Loss,White,India
+5/21/2025,340,310,Loss,Black,France
+5/21/2025,341,318,Win,White,Iran
+5/21/2025,342,326,Win,Black,USA
+5/21/2025,343,317,Win,White,Brazil
+5/21/2025,344,325,Win,Black,Czech Republic
+5/21/2025,345,333,Win,White,USA
+5/21/2025,346,341,Win,Black,Mexico
+5/22/2025,347,349,Win,White,Japan
+5/22/2025,348,341,Loss,Black,Colombia
+5/23/2025,349,341,Draw,White,United Kingdom
+5/23/2025,350,349,Win,Black,Brazil
+5/23/2025,351,357,Win,White,India
+5/23/2025,352,350,Loss,White,Brazil
+5/23/2025,353,342,Loss,White,Canada
+5/24/2025,354,334,Loss,White,Chile
+5/24/2025,355,327,Loss,Black,Malaysia
+5/24/2025,356,327,Draw,Black,USA
+5/24/2025,357,335,Win,White,India
+5/25/2025,358,327,Loss,Black,France
+5/25/2025,359,327,Draw,Black,Chile
+5/25/2025,360,335,Win,White,USA
+5/25/2025,361,343,Win,White,Switzerland
+5/26/2025,362,351,Win,White,Iraq
+5/26/2025,363,358,Win,Black,Ecuador
+5/26/2025,364,366,Win,Black,Israel
+5/27/2025,365,374,Win,Black,Portugal
+5/28/2025,366,366,Loss,White,Mexico
+5/28/2025,367,374,Win,Black,Philippines
+5/28/2025,368,374,Draw,White,France
+5/28/2025,369,382,Win,White,USA
+5/28/2025,370,390,Win,White,Morocco
+5/28/2025,371,398,Win,Black,USA
+5/29/2025,372,406,Win,Black,Iran
+5/29/2025,373,414,Win,Black,USA
+5/29/2025,374,422,Win,White,USA
+5/30/2025,375,414,Loss,Black,Morocco
+5/30/2025,376,422,Win,Black,USA
+5/30/2025,377,414,Loss,Black,Brazil
+5/31/2025,378,406,Loss,White,Peru
+5/31/2025,379,398,Loss,White,Brazil
+5/31/2025,380,406,Win,White,France
+5/31/2025,381,406,Draw,Black,USA
+5/31/2025,382,414,Win,Black,USA
+6/1/2025,383,422,Win,White,France
+6/1/2025,384,414,Loss,White,Spain
+6/2/2025,385,422,Win,White,India
+6/2/2025,386,414,Loss,Black,France
+6/2/2025,387,422,Win,Black,Austria
+6/2/2025,388,422,Draw,Black,USA
+6/2/2025,389,414,Loss,White,Turkiye
+6/2/2025,390,406,Loss,Black,France
+6/2/2025,391,413,Win,White,Basque Country
+6/3/2025,392,406,Loss,White,USA
+6/3/2025,393,398,Loss,White,India
+6/3/2025,394,406,Win,White,Philippines
+6/3/2025,395,414,Win,Black,South Korea
+6/3/2025,396,406,Loss,White,France
+6/3/2025,397,398,Loss,Black,USA
+6/3/2025,398,390,Loss,White,USA
+6/3/2025,399,382,Loss,White,Germany
+6/3/2025,400,390,Win,White,France
+6/3/2025,401,398,Win,Black,Greece
+6/3/2025,402,398,Draw,Black,USA
+6/3/2025,403,405,Win,White,USA
+6/4/2025,404,397,Loss,Black,India
+6/4/2025,405,389,Loss,White,France
+6/4/2025,406,389,Draw,Black,Ireland
+6/4/2025,407,397,Win,White,Chile
+6/6/2025,408,389,Loss,Black,Pakistan
+6/6/2025,409,397,Win,White,India
+6/6/2025,410,389,Loss,White,India
+6/6/2025,411,397,Win,White,South Africa
+6/6/2025,412,404,Win,Black,USA
+6/6/2025,413,412,Win,White,USA
+6/6/2025,414,404,Loss,Black,Argentina
+6/6/2025,415,413,Win,Black,Brazil
+6/6/2025,416,405,Loss,White,Mexico
+6/6/2025,417,397,Loss,Black,Thailand
+6/6/2025,418,405,Win,Black,Canada
+6/6/2025,419,413,Win,White,South Korea
+6/6/2025,420,413,Draw,White,Ukraine
+6/6/2025,421,405,Loss,Black,Canada
+6/7/2025,422,396,Loss,White,Brazil
+6/7/2025,423,388,Loss,Black,India
+6/7/2025,424,388,Draw,White,India
+6/7/2025,425,396,Win,Black,India
+6/7/2025,426,388,Loss,White,Iran
+6/7/2025,427,380,Loss,White,India
+6/7/2025,428,372,Loss,Black,Brazil
+6/7/2025,429,364,Loss,White,Turkiye
+6/7/2025,430,372,Win,Black,USA
+6/7/2025,431,379,Win,Black,Ukraine
+6/7/2025,432,371,Loss,White,South Africa
+6/7/2025,433,362,Loss,Black,Indonesia
+6/7/2025,434,370,Win,White,Brazil
+6/7/2025,435,378,Win,Black,Haiti
+6/7/2025,436,370,Loss,White,Italy
+6/7/2025,437,378,Win,Black,USA
+6/8/2025,438,386,Win,White,Poland
+6/8/2025,439,378,Loss,Black,USA
+6/8/2025,440,370,Loss,White,Brazil
+6/9/2025,441,362,Loss,White,Pakistan
+6/9/2025,442,354,Loss,White,Peru
+6/9/2025,443,346,Loss,Black,Indonesia
+6/9/2025,444,354,Win,Black,India
+6/9/2025,445,362,Rule Violation,None,None
+6/9/2025,446,354,Loss,Black,Iran
+6/9/2025,447,354,Draw,White,France
+6/9/2025,448,362,Win,White,Philippines
+6/9/2025,449,354,Loss,Black,Brazil
+6/10/2025,450,362,Win,White,France
+6/10/2025,451,362,Draw,Black,France
+6/10/2025,452,370,Win,White,Thailand
+6/10/2025,453,378,Win,Black,Australia
+6/12/2025,454,370,Loss,White,Pakistan
+6/12/2025,455,378,Win,Black,Kazakhstan
+6/12/2025,456,370,Loss,White,Guatamala
+6/13/2025,457,378,Win,Black,France
+6/13/2025,458,370,Loss,Black,Nigeria
+6/13/2025,459,378,Win,Black,France
+6/14/2025,460,369,Loss,White,Kazakhstan
+6/14/2025,461,377,Win,Black,Russia
+6/14/2025,462,368,Loss,White,Spain
+6/14/2025,463,360,Loss,Black,Serbia
+6/15/2025,464,368,Win,White,Colombia
+6/15/2025,465,360,Loss,Black,Brazil
+6/15/2025,466,352,Loss,White,Poland
+6/15/2025,467,344,Loss,White,Brazil
+6/16/2025,468,336,Loss,Black,Italy
+6/16/2025,469,328,Loss,Black,France
+6/16/2025,470,336,Win,White,USA
+6/16/2025,471,328,Loss,White,Panama
+6/16/2025,472,336,Win,White,Indonesia
+6/16/2025,473,328,Loss,Black,Honduras
+6/16/2025,474,328,Draw,White,Brazil
+6/16/2025,475,336,Win,Black,Argentina
+6/17/2025,476,344,Win,Black,Italy
+6/18/2025,477,344,Draw,Black,Poland
+6/18/2025,478,351,Win,Black,India
+6/18/2025,479,343,Loss,White,Russia
+6/18/2025,480,351,Win,White,Georgia
+6/18/2025,481,343,Loss,Black,India
+6/18/2025,482,352,Win,Black,India
+6/18/2025,483,360,Win,Black,USA
+6/18/2025,484,352,Loss,White,Canada
+6/20/2025,485,344,Loss,White,Afghanistan
+6/20/2025,486,336,Loss,White,Indonesia
+6/20/2025,487,328,Loss,Black,Wales
+6/20/2025,488,320,Loss,Black,Indonesia
+6/20/2025,489,328,Win,White,Canada
+6/20/2025,490,320,Loss,Black,Brazil
+6/21/2025,491,328,Win,White,Mexico
+6/22/2025,492,336,Win,Black,North Korea
+6/22/2025,493,344,Win,White,Turkiye
+6/22/2025,494,336,Loss,White,Kazakhstan
+6/22/2025,495,328,Loss,Black,France
+6/22/2025,496,337,Win,Black,Chile
+6/22/2025,497,345,Win,Black,Australia
+6/24/2025,498,353,Win,Black,Germany
+6/24/2025,499,345,Loss,White,Austria
+6/24/2025,500,353,Win,White,France
+6/24/2025,501,361,Win,Black,France
+6/24/2025,502,369,Win,Black,France
+6/24/2025,503,361,Loss,White,Catalonia
+6/24/2025,504,353,Loss,White,Netherlands
+6/24/2025,505,345,Loss,White,Morocco
+6/24/2025,506,337,Loss,Black,Morocco
+6/25/2025,507,345,Win,Black,Mexico
+6/25/2025,508,337,Loss,White,France
+6/25/2025,509,345,Win,Black,United Kingdom
+6/25/2025,510,354,Win,Black,Spain
+6/25/2025,511,346,Loss,White,Saudi Arabia
+6/25/2025,512,354,Win,White,India
+6/26/2025,513,346,Loss,White,Netherlands
+6/26/2025,514,354,Win,Black,USA
+6/27/2025,515,354,Draw,White,Sri Lanka
+6/27/2025,516,362,Win,White,Hungary
+6/27/2025,517,354,Loss,Black,India
+6/27/2025,518,362,Win,Black,United Kingdom
+6/27/2025,519,354,Loss,White,India
+6/27/2025,520,346,Loss,Black,Iran
+6/27/2025,521,339,Loss,Black,Hong Kong
+6/27/2025,522,348,Win,White,United Kingdom
+6/27/2025,523,356,Win,Black,Tunisia
+6/27/2025,524,356,Draw,White,India
+6/27/2025,525,364,Win,Black,Mexico
+6/29/2025,526,356,Loss,White,Switzerland
+6/29/2025,527,364,Win,White,Spain
+6/29/2025,528,356,Loss,Black,Canada
+6/29/2025,529,364,Win,Black,France
+6/29/2025,530,364,Draw,White,France
+6/30/2025,531,356,Loss,White,USA
+6/30/2025,532,348,Loss,Black,Indonesia
+6/30/2025,533,340,Loss,Black,Russia
+6/30/2025,534,348,Win,Black,Spain
+6/30/2025,535,340,Loss,White,USA
+6/30/2025,536,340,Draw,White,USA
+7/1/2025,537,348,Win,Black,India
+7/1/2025,538,356,Win,Black,India
+7/1/2025,539,348,Loss,Black,France
+7/1/2025,540,355,Win,Black,France
+7/1/2025,541,346,Loss,White,France
+7/1/2025,542,354,Win,Black,Uzbekistan
+7/1/2025,543,354,Draw,White,Germany
+7/3/2025,544,362,Win,Black,USA
+7/3/2025,545,370,Win,Black,Germany
+7/3/2025,546,362,Loss,Black,Canada
+7/3/2025,547,354,Loss,Black,Colombia
+7/4/2025,548,346,Loss,White,United Kingdom
+7/4/2025,549,354,Win,Black,United Kingdom
+7/4/2025,550,346,Loss,Black,Kyrgyztan
+7/4/2025,551,337,Loss,White,Guatamala
+7/6/2025,552,337,Draw,White,Guatamala
+7/6/2025,553,337,Draw,Black,Vietnam
+7/6/2025,554,345,Win,White,India
+7/6/2025,555,339,Loss,Black,India
+7/6/2025,556,347,Win,Black,India
+7/6/2025,557,355,Win,White,Hungary
+7/7/2025,558,363,Win,White,USA
+7/7/2025,559,355,Loss,Black,Egypt
+7/7/2025,560,347,Loss,Black,Russia
+7/7/2025,561,339,Loss,Black,USA
+7/7/2025,562,347,Win,Black,Philippines
+7/8/2025,563,339,Loss,White,Netherlands
+7/8/2025,564,347,Win,White,USA
+7/8/2025,565,355,Win,White,Morocco
+7/8/2025,566,347,Loss,Black,Moldova
+7/8/2025,567,356,Win,Black,Brazil
+7/8/2025,568,356,Draw,White,Mexico
+7/8/2025,569,364,Win,White,Brazil
+7/9/2025,570,372,Win,White,England
+7/10/2025,571,380,Win,White,Indonesia
+7/11/2025,572,372,Loss,Black,India
+7/11/2025,573,380,Win,Black,Switzerland
+7/11/2025,574,380,Draw,White,Romania
+7/11/2025,575,371,Loss,Black,Indonesia
+7/11/2025,576,363,Loss,White,Indonesia
+7/11/2025,577,371,Win,Black,Brazil
+7/13/2025,578,363,Loss,White,Brazil
+7/13/2025,579,355,Loss,Black,Mexico
+7/13/2025,580,363,Win,White,Brazil
+7/13/2025,581,371,Win,Black,Ghana
+7/16/2025,582,363,Loss,White,India
+7/16/2025,583,355,Loss,Black,Canada
+7/16/2025,584,363,Win,White,France
+7/16/2025,585,371,Win,White,USA
+7/16/2025,586,363,Loss,Black,France
+7/18/2025,587,355,Loss,White,USA
+7/18/2025,588,364,Win,Black,USA
+7/19/2025,589,348,Loss,Black,India
+7/20/2025,590,340,Loss,Black,India
+7/22/2025,591,349,Win,Black,France
+7/23/2025,592,357,Win,White,South Korea
+7/23/2025,593,349,Loss,White,Nigeria
+7/23/2025,594,357,Win,White,USA
+7/24/2025,595,349,Loss,Black,Pakistan
+7/24/2025,596,357,Win,White,USA
+7/24/2025,597,365,Win,Black,Indonesia
+7/24/2025,598,373,Win,White,Brazil
+7/25/2025,599,381,Win,Black,Argentina
+7/25/2025,600,373,Loss,White,Uganda
+7/25/2025,601,381,Win,Black,Malaysia
+7/25/2025,602,381,Draw,White,Mayanmar
+7/26/2025,603,390,Win,Black,Morocco
+7/27/2025,604,382,Loss,Black,India
+7/27/2025,605,390,Win,Black,Romania
+7/27/2025,606,398,Win,White,Belgium
+7/27/2025,607,406,Win,White,South Africa
+7/28/2025,608,398,Loss,White,Brazil
+7/28/2025,609,390,Loss,Black,France
+7/28/2025,610,397,Win,White,USA
+7/28/2025,611,405,Win,White,France
+7/31/2025,612,414,Win,Black,Colombia
+7/31/2025,613,414,Draw,Black,Nigeria
+7/31/2025,614,414,Draw,White,Nigeria
+7/31/2025,615,406,Loss,Black,France
+8/1/2025,616,398,Loss,White,USA
+8/1/2025,617,390,Loss,Black,Brazil
+8/4/2025,618,390,Draw,Black,France
+8/4/2025,619,382,Loss,White,Philippines
+8/4/2025,620,374,Loss,White,Italy
+8/4/2025,621,382,Win,White,Germany
+8/5/2025,622,374,Loss,Black,Mozambique
+8/5/2025,623,366,Loss,White,Vatican City
+8/5/2025,624,359,Loss,Black,United Kingdom
+8/5/2025,625,367,Win,White,Indonesia
+8/5/2025,626,375,Win,White,Brazil
+8/5/2025,627,367,Loss,White,France
+8/5/2025,628,359,Loss,Black,France
+8/5/2025,629,352,Loss,Black,France
+8/5/2025,630,345,Loss,White,France
+8/5/2025,631,352,Win,Black,USA
+8/5/2025,632,361,Win,Black,Vietnam
+8/5/2025,633,369,Win,White,Vietnam
+8/6/2025,634,361,Loss,Black,India
+8/6/2025,635,353,Loss,Black,Indonesia
+8/6/2025,636,361,Win,White,Saudi Arabia
+8/6/2025,637,369,Win,White,Japan
+8/8/2025,638,377,Win,White,India
+8/8/2025,639,368,Loss,Black,Romania
+8/9/2025,640,376,Win,Black,Dominican Republic
+8/13/2025,641,384,Win,White,USA
+8/13/2025,642,392,Win,White,Malaysia
+8/15/2025,643,384,Win,Black,Morocco
+8/15/2025,645,383,Loss,Black,Philippines
+,646,,Future Game,Future Game,
+,647,,Future Game,Future Game,
+,648,,Future Game,Future Game,
+,649,,Future Game,Future Game,
+,650,,Future Game,Future Game,
+,651,,Future Game,Future Game,
+,652,,Future Game,Future Game,
+,653,,Future Game,Future Game,
+,654,,Future Game,Future Game,
+,655,,Future Game,Future Game,
+,656,,Future Game,Future Game,
+,657,,Future Game,Future Game,
+,658,,Future Game,Future Game,
+,659,,Future Game,Future Game,
+,660,,Future Game,Future Game,
+,661,,Future Game,Future Game,
+,662,,Future Game,Future Game,
+,663,,Future Game,Future Game,
+,664,,Future Game,Future Game,
+,665,,Future Game,Future Game,
+,666,,Future Game,Future Game,
+,667,,Future Game,Future Game,
+,668,,Future Game,Future Game,
+,669,,Future Game,Future Game,
+,670,,Future Game,Future Game,
+,671,,Future Game,Future Game,
+,672,,Future Game,Future Game,
+,673,,Future Game,Future Game,
+,674,,Future Game,Future Game,
+,675,,Future Game,Future Game,
+,676,,Future Game,Future Game,
+,677,,Future Game,Future Game,
+,678,,Future Game,Future Game,
+,679,,Future Game,Future Game,
+,680,,Future Game,Future Game,
+,681,,Future Game,Future Game,
+,682,,Future Game,Future Game,
+,683,,Future Game,Future Game,
+,684,,Future Game,Future Game,
+,685,,Future Game,Future Game,
+,686,,Future Game,Future Game,
+,687,,Future Game,Future Game,
+,688,,Future Game,Future Game,
+,689,,Future Game,Future Game,
+,690,,Future Game,Future Game,
+,691,,Future Game,Future Game,
+,692,,Future Game,Future Game,
+,693,,Future Game,Future Game,
+,694,,Future Game,Future Game,
+,695,,Future Game,Future Game,
+,696,,Future Game,Future Game,
+,697,,Future Game,Future Game,
+,698,,Future Game,Future Game,
+,699,,Future Game,Future Game,
+,700,,Future Game,Future Game,
+,701,,Future Game,Future Game,
+,702,,Future Game,Future Game,
+,703,,Future Game,Future Game,
+,704,,Future Game,Future Game,
+,705,,Future Game,Future Game,
+,706,,Future Game,Future Game,
+,707,,Future Game,Future Game,
+,708,,Future Game,Future Game,
+,709,,Future Game,Future Game,
+,710,,Future Game,Future Game,
+,711,,Future Game,Future Game,
+,712,,Future Game,Future Game,
+,713,,Future Game,Future Game,
+,714,,Future Game,Future Game,
+,715,,Future Game,Future Game,
+,716,,Future Game,Future Game,
+,717,,Future Game,Future Game,
+,718,,Future Game,Future Game,
+,719,,Future Game,Future Game,
+,720,,Future Game,Future Game,
+,721,,Future Game,Future Game,
+,722,,Future Game,Future Game,
+,723,,Future Game,Future Game,
+,724,,Future Game,Future Game,
+,725,,Future Game,Future Game,
+,726,,Future Game,Future Game,
+,727,,Future Game,Future Game,
+,728,,Future Game,Future Game,
+,729,,Future Game,Future Game,
+,730,,Future Game,Future Game,
+,731,,Future Game,Future Game,
+,732,,Future Game,Future Game,
+,733,,Future Game,Future Game,
+,734,,Future Game,Future Game,
+,735,,Future Game,Future Game,
+,736,,Future Game,Future Game,
+,737,,Future Game,Future Game,
+,738,,Future Game,Future Game,
+,739,,Future Game,Future Game,
+,740,,Future Game,Future Game,
+,741,,Future Game,Future Game,
+,742,,Future Game,Future Game,
+,743,,Future Game,Future Game,
+,744,,Future Game,Future Game,
+,745,,Future Game,Future Game,
+,746,,Future Game,Future Game,
+,747,,Future Game,Future Game,
+,748,,Future Game,Future Game,
+,749,,Future Game,Future Game,
+,750,,Future Game,Future Game,
+,751,,Future Game,Future Game,
+,752,,Future Game,Future Game,
+,753,,Future Game,Future Game,
+,754,,Future Game,Future Game,
+,755,,Future Game,Future Game,
+,756,,Future Game,Future Game,
+,757,,Future Game,Future Game,
+,758,,Future Game,Future Game,
+,759,,Future Game,Future Game,
+,760,,Future Game,Future Game,
+,761,,Future Game,Future Game,
+,762,,Future Game,Future Game,
+,763,,Future Game,Future Game,
+,764,,Future Game,Future Game,
+,765,,Future Game,Future Game,
+,766,,Future Game,Future Game,
+,767,,Future Game,Future Game,
+,768,,Future Game,Future Game,
+,769,,Future Game,Future Game,
+,770,,Future Game,Future Game,
+,771,,Future Game,Future Game,
+,772,,Future Game,Future Game,
+,773,,Future Game,Future Game,
+,774,,Future Game,Future Game,
+,775,,Future Game,Future Game,
+,776,,Future Game,Future Game,
+,777,,Future Game,Future Game,
+,778,,Future Game,Future Game,
+,779,,Future Game,Future Game,
+,780,,Future Game,Future Game,
+,781,,Future Game,Future Game,
+,782,,Future Game,Future Game,
+,783,,Future Game,Future Game,
+,784,,Future Game,Future Game,
+,785,,Future Game,Future Game,
+,786,,Future Game,Future Game,
+,787,,Future Game,Future Game,
+,788,,Future Game,Future Game,
+,789,,Future Game,Future Game,
+,790,,Future Game,Future Game,
+,791,,Future Game,Future Game,
+,792,,Future Game,Future Game,
+,793,,Future Game,Future Game,
+,794,,Future Game,Future Game,
+,795,,Future Game,Future Game,
+,796,,Future Game,Future Game,
+,797,,Future Game,Future Game,
+,798,,Future Game,Future Game,
+,799,,Future Game,Future Game,
+,800,,Future Game,Future Game,
+,801,,Future Game,Future Game,
+,802,,Future Game,Future Game,
+,803,,Future Game,Future Game,
+,804,,Future Game,Future Game,
+,805,,Future Game,Future Game,
+,806,,Future Game,Future Game,
+,807,,Future Game,Future Game,
+,808,,Future Game,Future Game,
+,809,,Future Game,Future Game,
+,810,,Future Game,Future Game,
+,811,,Future Game,Future Game,
+,812,,Future Game,Future Game,
+,813,,Future Game,Future Game,
+,814,,Future Game,Future Game,
+,815,,Future Game,Future Game,
+,816,,Future Game,Future Game,
+,817,,Future Game,Future Game,
+,818,,Future Game,Future Game,
+,819,,Future Game,Future Game,
+,820,,Future Game,Future Game,
+,821,,Future Game,Future Game,
+,822,,Future Game,Future Game,
+,823,,Future Game,Future Game,
+,824,,Future Game,Future Game,
+,825,,Future Game,Future Game,
+,826,,Future Game,Future Game,
+,827,,Future Game,Future Game,
+,828,,Future Game,Future Game,
+,829,,Future Game,Future Game,
+,830,,Future Game,Future Game,
+,831,,Future Game,Future Game,
+,832,,Future Game,Future Game,
+,833,,Future Game,Future Game,
+,834,,Future Game,Future Game,
+,835,,Future Game,Future Game,
+,836,,Future Game,Future Game,
+,837,,Future Game,Future Game,
+,838,,Future Game,Future Game,
+,839,,Future Game,Future Game,
+,840,,Future Game,Future Game,
+,841,,Future Game,Future Game,
+,842,,Future Game,Future Game,
+,843,,Future Game,Future Game,
+,844,,Future Game,Future Game,
+,845,,Future Game,Future Game,
+,846,,Future Game,Future Game,
+,847,,Future Game,Future Game,
+,848,,Future Game,Future Game,
+,849,,Future Game,Future Game,
+,850,,Future Game,Future Game,
+,851,,Future Game,Future Game,
+,852,,Future Game,Future Game,
+,853,,Future Game,Future Game,
+,854,,Future Game,Future Game,
+,855,,Future Game,Future Game,
+,856,,Future Game,Future Game,
+,857,,Future Game,Future Game,
+,858,,Future Game,Future Game,
+,859,,Future Game,Future Game,
+,860,,Future Game,Future Game,
+,861,,Future Game,Future Game,
+,862,,Future Game,Future Game,
+,863,,Future Game,Future Game,
+,864,,Future Game,Future Game,
+,865,,Future Game,Future Game,
+,866,,Future Game,Future Game,
+,867,,Future Game,Future Game,
+,868,,Future Game,Future Game,
+,869,,Future Game,Future Game,
+,870,,Future Game,Future Game,
+,871,,Future Game,Future Game,
+,872,,Future Game,Future Game,
+,873,,Future Game,Future Game,
+,874,,Future Game,Future Game,
+,875,,Future Game,Future Game,
+,876,,Future Game,Future Game,
+,877,,Future Game,Future Game,
+,878,,Future Game,Future Game,
+,879,,Future Game,Future Game,
+,880,,Future Game,Future Game,
+,881,,Future Game,Future Game,
+,882,,Future Game,Future Game,
+,883,,Future Game,Future Game,
+,884,,Future Game,Future Game,
+,885,,Future Game,Future Game,
+,886,,Future Game,Future Game,
+,887,,Future Game,Future Game,
+,888,,Future Game,Future Game,
+,889,,Future Game,Future Game,
+,890,,Future Game,Future Game,
+,891,,Future Game,Future Game,
+,892,,Future Game,Future Game,
+,893,,Future Game,Future Game,
+,894,,Future Game,Future Game,
+,895,,Future Game,Future Game,
+,896,,Future Game,Future Game,
+,897,,Future Game,Future Game,
+,898,,Future Game,Future Game,
+,899,,Future Game,Future Game,
+,900,,Future Game,Future Game,
+,901,,Future Game,Future Game,
+,902,,Future Game,Future Game,
+,903,,Future Game,Future Game,
+,904,,Future Game,Future Game,
+,905,,Future Game,Future Game,
+,906,,Future Game,Future Game,
+,907,,Future Game,Future Game,
+,908,,Future Game,Future Game,
+,909,,Future Game,Future Game,
+,910,,Future Game,Future Game,
+,911,,Future Game,Future Game,
+,912,,Future Game,Future Game,
+,913,,Future Game,Future Game,
+,914,,Future Game,Future Game,
+,915,,Future Game,Future Game,
+,916,,Future Game,Future Game,
+,917,,Future Game,Future Game,
+,918,,Future Game,Future Game,
+,919,,Future Game,Future Game,
+,920,,Future Game,Future Game,
+,921,,Future Game,Future Game,
+,922,,Future Game,Future Game,
+,923,,Future Game,Future Game,
+,924,,Future Game,Future Game,
+,925,,Future Game,Future Game,
+,926,,Future Game,Future Game,
+,927,,Future Game,Future Game,
+,928,,Future Game,Future Game,
+,929,,Future Game,Future Game,
+,930,,Future Game,Future Game,
+,931,,Future Game,Future Game,
+,932,,Future Game,Future Game,
+,933,,Future Game,Future Game,
+,934,,Future Game,Future Game,
+,935,,Future Game,Future Game,
+,936,,Future Game,Future Game,
+,937,,Future Game,Future Game,
+,938,,Future Game,Future Game,
+,939,,Future Game,Future Game,
+,940,,Future Game,Future Game,
+,941,,Future Game,Future Game,
+,942,,Future Game,Future Game,
+,943,,Future Game,Future Game,
+,944,,Future Game,Future Game,
+,945,,Future Game,Future Game,
+,946,,Future Game,Future Game,
+,947,,Future Game,Future Game,
+,948,,Future Game,Future Game,
+,949,,Future Game,Future Game,
+,950,,Future Game,Future Game,
+,951,,Future Game,Future Game,
+,952,,Future Game,Future Game,
+,953,,Future Game,Future Game,
+,954,,Future Game,Future Game,
+,955,,Future Game,Future Game,
+,956,,Future Game,Future Game,
+,957,,Future Game,Future Game,
+,958,,Future Game,Future Game,
+,959,,Future Game,Future Game,
+,960,,Future Game,Future Game,
+,961,,Future Game,Future Game,
+,962,,Future Game,Future Game,
+,963,,Future Game,Future Game,
+,964,,Future Game,Future Game,
+,965,,Future Game,Future Game,
+,966,,Future Game,Future Game,
+,967,,Future Game,Future Game,
+,968,,Future Game,Future Game,
+,969,,Future Game,Future Game,
+,970,,Future Game,Future Game,
+,971,,Future Game,Future Game,
+,972,,Future Game,Future Game,
+,973,,Future Game,Future Game,
+,974,,Future Game,Future Game,
+,975,,Future Game,Future Game,
+,976,,Future Game,Future Game,
+,977,,Future Game,Future Game,
+,978,,Future Game,Future Game,
+,979,,Future Game,Future Game,
+,980,,Future Game,Future Game,
+,981,,Future Game,Future Game,
+,982,,Future Game,Future Game,
+,983,,Future Game,Future Game,
+,984,,Future Game,Future Game,
+,985,,Future Game,Future Game,
+,986,,Future Game,Future Game,
+,987,,Future Game,Future Game,
+,988,,Future Game,Future Game,
+,989,,Future Game,Future Game,
+,990,,Future Game,Future Game,
+,991,,Future Game,Future Game,
+,992,,Future Game,Future Game,
+,993,,Future Game,Future Game,
+,994,,Future Game,Future Game,
+,995,,Future Game,Future Game,
+,996,,Future Game,Future Game,
+,997,,Future Game,Future Game,
+,998,,Future Game,Future Game,
+,999,,Future Game,Future Game,
+,1000,,Future Game,Future Game,
+,1001,,Future Game,Future Game,
+,1002,,Future Game,Future Game,
+,1003,,Future Game,Future Game,
+,1004,,Future Game,Future Game,
+,1005,,Future Game,Future Game,
+,1006,,Future Game,Future Game,
+,1007,,Future Game,Future Game,
+,1008,,Future Game,Future Game,
+,1009,,Future Game,Future Game,
+,1010,,Future Game,Future Game,
+,1011,,Future Game,Future Game,
+,1012,,Future Game,Future Game,
+,1013,,Future Game,Future Game,
+,1014,,Future Game,Future Game,
+,1015,,Future Game,Future Game,
+,1016,,Future Game,Future Game,
+,1017,,Future Game,Future Game,
+,1018,,Future Game,Future Game,
+,1019,,Future Game,Future Game,
+,1020,,Future Game,Future Game,
+,1021,,Future Game,Future Game,
+,1022,,Future Game,Future Game,
+,1023,,Future Game,Future Game,
+,1024,,Future Game,Future Game,
+,1025,,Future Game,Future Game,
+,1026,,Future Game,Future Game,
+,1027,,Future Game,Future Game,
+,1028,,Future Game,Future Game,
+,1029,,Future Game,Future Game,
+,1030,,Future Game,Future Game,
+,1031,,Future Game,Future Game,
+,1032,,Future Game,Future Game,
+,1033,,Future Game,Future Game,
+,1034,,Future Game,Future Game,
+,1035,,Future Game,Future Game,
+,1036,,Future Game,Future Game,
+,1037,,Future Game,Future Game,
+,1038,,Future Game,Future Game,
+,1039,,Future Game,Future Game,
+,1040,,Future Game,Future Game,
+,1041,,Future Game,Future Game,
+,1042,,Future Game,Future Game,
+,1043,,Future Game,Future Game,
+,1044,,Future Game,Future Game,
+,1045,,Future Game,Future Game,
+,1046,,Future Game,Future Game,
+,1047,,Future Game,Future Game,
+,1048,,Future Game,Future Game,
+,1049,,Future Game,Future Game,
+,1050,,Future Game,Future Game,
+,1051,,Future Game,Future Game,
+,1052,,Future Game,Future Game,
+,1053,,Future Game,Future Game,
+,1054,,Future Game,Future Game,
+,1055,,Future Game,Future Game,
+,1056,,Future Game,Future Game,
+,1057,,Future Game,Future Game,
+,1058,,Future Game,Future Game,
+,1059,,Future Game,Future Game,
+,1060,,Future Game,Future Game,
+,1061,,Future Game,Future Game,
+,1062,,Future Game,Future Game,
+,1063,,Future Game,Future Game,
+,1064,,Future Game,Future Game,
+,1065,,Future Game,Future Game,
+,1066,,Future Game,Future Game,
+,1067,,Future Game,Future Game,
+,1068,,Future Game,Future Game,
+,1069,,Future Game,Future Game,
+,1070,,Future Game,Future Game,
+,1071,,Future Game,Future Game,
+,1072,,Future Game,Future Game,
+,1073,,Future Game,Future Game,
+,1074,,Future Game,Future Game,
+,1075,,Future Game,Future Game,
+,1076,,Future Game,Future Game,
+,1077,,Future Game,Future Game,
+,1078,,Future Game,Future Game,
+,1079,,Future Game,Future Game,
+,1080,,Future Game,Future Game,
+,1081,,Future Game,Future Game,
+,1082,,Future Game,Future Game,
+,1083,,Future Game,Future Game,
+,1084,,Future Game,Future Game,
+,1085,,Future Game,Future Game,
+,1086,,Future Game,Future Game,
+,1087,,Future Game,Future Game,
+,1088,,Future Game,Future Game,
+,1089,,Future Game,Future Game,
+,1090,,Future Game,Future Game,
+,1091,,Future Game,Future Game,
+,1092,,Future Game,Future Game,
+,1093,,Future Game,Future Game,
+,1094,,Future Game,Future Game,
+,1095,,Future Game,Future Game,
+,1096,,Future Game,Future Game,
+,1097,,Future Game,Future Game,
+,1098,,Future Game,Future Game,
+,1099,,Future Game,Future Game,
